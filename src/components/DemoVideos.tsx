@@ -6,17 +6,17 @@ import QuestionTeaserThread from './QuestionTeaserThread';
 const DemoVideos = () => {
   const videos = [
     {
-      id: "dQw4w9WgXcQ",
+      videoId: "dQw4w9WgXcQ",
       title: "Understanding Your Path",
       description: "Discover how to identify your unique journey and align with your true purpose."
     },
     {
-      id: "dQw4w9WgXcQ", 
+      videoId: "dQw4w9WgXcQ", 
       title: "Values-Based Decision Making",
       description: "Learn to make decisions that align with your core values and long-term vision."
     },
     {
-      id: "dQw4w9WgXcQ",
+      videoId: "dQw4w9WgXcQ",
       title: "Building Authentic Relationships", 
       description: "Create meaningful connections that support your authentic self-expression."
     }
