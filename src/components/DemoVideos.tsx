@@ -1,25 +1,39 @@
 
 import React from 'react';
-import VideoCardGrid from './VideoCardGrid';
+import YouTubeEmbed from './YouTubeEmbed';
 import QuestionTeaserThread from './QuestionTeaserThread';
 
 const DemoVideos = () => {
-  const demoVideoIds = ['dQw4w9WgXcQ', 'jNQXAC9IVRw']; // Placeholder video IDs
+  const videos = [
+    {
+      id: "dQw4w9WgXcQ",
+      title: "Understanding Your Path",
+      description: "Discover how to identify your unique journey and align with your true purpose."
+    },
+    {
+      id: "dQw4w9WgXcQ", 
+      title: "Values-Based Decision Making",
+      description: "Learn to make decisions that align with your core values and long-term vision."
+    },
+    {
+      id: "dQw4w9WgXcQ",
+      title: "Building Authentic Relationships", 
+      description: "Create meaningful connections that support your authentic self-expression."
+    }
+  ];
 
   return (
-    <section id="demo-videos" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-teal-900 mb-4">
-            🎬 Coaching in Action
-          </h2>
-          <p className="text-lg text-teal-700 max-w-2xl mx-auto">
-            See how values-aligned coaching transforms lives through real sessions and community insights.
-          </p>
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-emerald-800 mb-12">
+          Explore Your Journey
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {videos.map((video, index) => (
+            <YouTubeEmbed key={index} {...video} />
+          ))}
         </div>
-        
-        <VideoCardGrid videos={demoVideoIds} />
-        <QuestionTeaserThread />
+        <QuestionTeaserThread topicId="demo-videos" />
       </div>
     </section>
   );

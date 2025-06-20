@@ -10,6 +10,13 @@ const Hero = () => {
   return (
     <section className="text-center py-16 bg-yellow-50">
       <div className="max-w-4xl mx-auto px-4">
+        <div className="flex justify-center mb-6">
+          <img 
+            src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
+            alt="AltPath.ai Logo" 
+            className="w-24 h-24 object-contain"
+          />
+        </div>
         <h1 className="text-4xl font-bold text-emerald-800 mb-4">
           Your Journey Is Unique.
         </h1>
