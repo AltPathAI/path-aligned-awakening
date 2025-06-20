@@ -12,29 +12,34 @@ export interface User {
 export interface Topic {
   id: string;
   title: string;
-  description: string;
-  video_urls: string[];
+  description?: string;
   created_at: string;
   updated_at: string;
 }
 
 export interface Question {
   id: string;
-  content: string;
   topic_id: string;
-  author_id: string;
-  author?: User;
-  vote_count: number;
-  votes?: Vote[];
+  user_id: string;
+  body: string;
   created_at: string;
   updated_at: string;
+  author?: User;
+  votes?: Vote[];
+  videos?: Video[];
 }
 
 export interface Vote {
   id: string;
   question_id: string;
   user_id: string;
-  value: 1 | -1;
+  created_at: string;
+}
+
+export interface Video {
+  id: string;
+  question_id: string;
+  youtube_id: string;
   created_at: string;
 }
 
