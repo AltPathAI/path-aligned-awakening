@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { useAuth } from '@/contexts/AuthContext';
-import { User, Home, Video, HelpCircle, Settings } from 'lucide-react';
+import { User, Home, Video, HelpCircle, Settings, TreePine } from 'lucide-react';
 
 const Navbar = () => {
   const { user, signOut } = useAuth();
@@ -17,10 +17,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">A</span>
+            <div className="w-8 h-8 bg-gradient-to-br from-teal-600 to-emerald-700 rounded-lg flex items-center justify-center">
+              <TreePine className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">AltPath.ai</span>
+            <span className="text-xl font-bold text-teal-900">AltPath.ai</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -28,8 +28,8 @@ const Navbar = () => {
               to="/"
               className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive('/') 
-                  ? 'text-purple-600 bg-purple-50' 
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                  ? 'text-teal-600 bg-teal-50' 
+                  : 'text-teal-700 hover:text-teal-900 hover:bg-teal-50'
               }`}
             >
               <Home className="w-4 h-4" />
@@ -39,8 +39,8 @@ const Navbar = () => {
               to="/topics"
               className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive('/topics') 
-                  ? 'text-purple-600 bg-purple-50' 
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                  ? 'text-teal-600 bg-teal-50' 
+                  : 'text-teal-700 hover:text-teal-900 hover:bg-teal-50'
               }`}
             >
               <Video className="w-4 h-4" />
@@ -50,8 +50,8 @@ const Navbar = () => {
               to="/values-map"
               className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive('/values-map') 
-                  ? 'text-purple-600 bg-purple-50' 
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                  ? 'text-teal-600 bg-teal-50' 
+                  : 'text-teal-700 hover:text-teal-900 hover:bg-teal-50'
               }`}
             >
               <HelpCircle className="w-4 h-4" />
@@ -61,8 +61,8 @@ const Navbar = () => {
               to="/subscription"
               className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive('/subscription') 
-                  ? 'text-purple-600 bg-purple-50' 
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                  ? 'text-teal-600 bg-teal-50' 
+                  : 'text-teal-700 hover:text-teal-900 hover:bg-teal-50'
               }`}
             >
               <Settings className="w-4 h-4" />
@@ -74,24 +74,24 @@ const Navbar = () => {
             {user ? (
               <div className="flex items-center space-x-3">
                 <Link to="/profile">
-                  <Avatar className="w-8 h-8 hover:ring-2 hover:ring-purple-200 transition-all">
+                  <Avatar className="w-8 h-8 hover:ring-2 hover:ring-teal-200 transition-all">
                     <AvatarImage src={user.avatar_url} />
                     <AvatarFallback>
                       <User className="w-4 h-4" />
                     </AvatarFallback>
                   </Avatar>
                 </Link>
-                <Button variant="ghost" size="sm" onClick={signOut}>
+                <Button variant="ghost" size="sm" onClick={signOut} className="text-teal-700 hover:text-teal-900 hover:bg-teal-50">
                   Sign Out
                 </Button>
               </div>
             ) : (
               <div className="flex items-center space-x-2">
                 <Link to="/auth">
-                  <Button variant="ghost" size="sm">Sign In</Button>
+                  <Button variant="ghost" size="sm" className="text-teal-700 hover:text-teal-900 hover:bg-teal-50">Sign In</Button>
                 </Link>
                 <Link to="/auth">
-                  <Button size="sm">Get Started</Button>
+                  <Button size="sm" className="bg-teal-600 hover:bg-teal-700 text-white">Get Started</Button>
                 </Link>
               </div>
             )}
