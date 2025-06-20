@@ -15,13 +15,13 @@ const Hero = () => {
   return (
     <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
           {/* Logo Section */}
           <div className="flex-shrink-0">
             <img 
               src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
               alt="AltPath.ai Logo" 
-              className="w-32 h-32 lg:w-40 lg:h-40 object-contain"
+              className="w-48 h-48 lg:w-64 lg:h-64 object-contain"
             />
           </div>
           
