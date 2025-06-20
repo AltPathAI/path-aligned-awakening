@@ -76,11 +76,11 @@ const Landing = () => {
       <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center mb-8">
-            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2">
+            <div className="w-24 h-24 bg-white rounded-2xl flex items-center justify-center shadow-lg p-3">
               <img 
                 src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
                 alt="AltPath.ai Logo" 
-                className="w-12 h-12 object-contain"
+                className="w-20 h-20 object-contain"
               />
             </div>
           </div>
