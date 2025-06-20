@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -77,8 +76,12 @@ const Landing = () => {
       <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex justify-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl flex items-center justify-center shadow-lg">
-              <TreePine className="w-8 h-8 text-white" />
+            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg p-2">
+              <img 
+                src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
+                alt="AltPath.ai Logo" 
+                className="w-12 h-12 object-contain"
+              />
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
