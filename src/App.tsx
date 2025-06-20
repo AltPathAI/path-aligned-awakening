@@ -9,6 +9,8 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/Index";
 import Landing from "./pages/Landing";
 import Pricing from "./pages/Pricing";
+import Success from "./pages/Success";
+import Cancel from "./pages/Cancel";
 import NotFound from "./pages/NotFound";
 import TopicsPage from "./pages/topics/index";
 import NewTopicPage from "./pages/topics/new";
@@ -36,6 +38,9 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/index" element={<Index />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/success" element={<Success />} />
+              <Route path="/cancel" element={<Cancel />} />
               <Route path="/topics" element={<TopicsPage />} />
               <Route path="/topics/new" element={<NewTopicPage />} />
               <Route path="/topics/edit/:id" element={<EditTopicPage />} />

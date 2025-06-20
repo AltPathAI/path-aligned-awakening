@@ -1,7 +1,7 @@
 
 import React from 'react';
 import PricingOverview from '../components/PricingOverview';
-import SchedulerEmbed from '../components/SchedulerEmbed';
+import PaymentSchedulerEmbed from '../components/PaymentSchedulerEmbed';
 import { Card, CardContent } from '../components/ui/card';
 
 const Pricing = () => {
@@ -63,8 +63,8 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Scheduler Section */}
-      <SchedulerEmbed />
+      {/* Payment Scheduler Section */}
+      <PaymentSchedulerEmbed />
 
       {/* Final CTA */}
       <section className="py-16 bg-emerald-800 text-white">
@@ -77,10 +77,10 @@ const Pricing = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="#scheduler"
+              href="#payment-scheduler"
               className="bg-white text-emerald-800 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
             >
-              Schedule Your Session
+              Book & Pay Now
             </a>
             <a
               href="https://calendly.com/bruceboston/meet-greet-10min"
@@ -88,7 +88,7 @@ const Pricing = () => {
               rel="noopener noreferrer"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-emerald-800 transition-colors"
             >
-              Start with Meet & Greet ($5)
+              Free Meet & Greet (No Payment)
             </a>
           </div>
         </div>
