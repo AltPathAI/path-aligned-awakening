@@ -8,18 +8,21 @@ const mockTopics: Topic[] = [
     title: 'Alternative Career Paths in Tech',
     description: 'Exploring unconventional routes to success in technology beyond traditional corporate roles.',
     created_at: '2024-01-15T10:00:00Z',
+    updated_at: '2024-01-15T10:00:00Z',
   },
   {
     id: '2',
     title: 'Minimalist Living in a Consumer Society',
     description: 'How to challenge materialism and find fulfillment through intentional living.',
     created_at: '2024-01-10T15:30:00Z',
+    updated_at: '2024-01-10T15:30:00Z',
   },
   {
     id: '3',
     title: 'Education Beyond Traditional Institutions',
     description: 'Alternative learning paths that challenge the conventional education system.',
     created_at: '2024-01-05T09:15:00Z',
+    updated_at: '2024-01-05T09:15:00Z',
   },
 ];
 
@@ -41,11 +44,13 @@ export const createTopic = async (title: string, description?: string): Promise<
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 800));
   
+  const now = new Date().toISOString();
   const newTopic: Topic = {
     id: Math.random().toString(36).substr(2, 9),
     title,
     description,
-    created_at: new Date().toISOString(),
+    created_at: now,
+    updated_at: now,
   };
   
   topicsStorage.unshift(newTopic);
@@ -61,7 +66,11 @@ export const updateTopic = async (id: string, updates: Partial<Pick<Topic, 'titl
     throw new Error('Topic not found');
   }
   
-  const updatedTopic = { ...topicsStorage[topicIndex], ...updates };
+  const updatedTopic = { 
+    ...topicsStorage[topicIndex], 
+    ...updates,
+    updated_at: new Date().toISOString()
+  };
   topicsStorage[topicIndex] = updatedTopic;
   return updatedTopic;
 };
