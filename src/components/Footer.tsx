@@ -1,37 +1,15 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Calendar, Youtube } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 
 const Footer = () => {
   const handleBookCall = () => {
     window.open('https://calendly.com/altpathai-vki1/30min', '_blank', 'width=800,height=600');
   };
 
-  const handleYouTubeSubscribe = () => {
-    window.open('https://www.youtube.com/@altpathai', '_blank');
-  };
-
   return (
     <>
-      {/* YouTube Subscribe Banner */}
-      <div className="bg-red-600 text-white py-2 px-4 text-center">
-        <div className="max-w-4xl mx-auto flex items-center justify-center space-x-4">
-          <Youtube className="w-5 h-5" />
-          <span className="text-sm font-medium">
-            Get weekly insights on values-aligned living
-          </span>
-          <Button
-            size="sm"
-            variant="secondary"
-            onClick={handleYouTubeSubscribe}
-            className="bg-white text-red-600 hover:bg-gray-100"
-          >
-            Subscribe
-          </Button>
-        </div>
-      </div>
-
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-600 to-emerald-700">
         <div className="max-w-4xl mx-auto text-center">
