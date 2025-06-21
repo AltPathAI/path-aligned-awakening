@@ -1,10 +1,13 @@
 
 import React from 'react';
-import CalendlyEmbed from './CalendlyEmbed';
 
 const Hero = () => {
   const handleYouTubeSubscribe = () => {
-    window.open('https://youtube.com/AltPathAI', '_blank');
+    window.open('https://www.youtube.com/@altpathai', '_blank');
+  };
+
+  const handleBookCall = () => {
+    window.open('https://calendly.com/altpathai-vki1/30min', '_blank', 'width=800,height=600');
   };
 
   return (
@@ -26,15 +29,15 @@ const Hero = () => {
               Discover the Path That Belongs to You.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-              <CalendlyEmbed
-                eventUrl="https://calendly.com/bruceboston/altpathai/session"
-                className="bg-teal-600 hover:bg-teal-700 text-white"
+              <button
+                onClick={handleBookCall}
+                className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
               >
-                📅 Book a Discovery Call
-              </CalendlyEmbed>
+                📅 Book a Free Discovery Call
+              </button>
               <button
                 onClick={handleYouTubeSubscribe}
-                className="bg-white hover:bg-gray-50 text-teal-700 border border-teal-300 px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center"
+                className="bg-red-600 hover:bg-red-700 text-white border border-red-300 px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center"
               >
                 ▶️ Subscribe on YouTube
               </button>

@@ -5,11 +5,11 @@ import { Calendar, Youtube } from 'lucide-react';
 
 const Footer = () => {
   const handleBookCall = () => {
-    window.open('https://calendly.com/bruceboston/altpathai/session', '_blank');
+    window.open('https://calendly.com/altpathai-vki1/30min', '_blank', 'width=800,height=600');
   };
 
   const handleYouTubeSubscribe = () => {
-    window.open('https://youtube.com/AltPathAI', '_blank');
+    window.open('https://www.youtube.com/@altpathai', '_blank');
   };
 
   return (
@@ -47,7 +47,7 @@ const Footer = () => {
             className="bg-white text-teal-700 hover:bg-teal-50 px-8 py-3 text-lg shadow-lg"
           >
             <Calendar className="w-5 h-5 mr-2" />
-            Book Your Discovery Call
+            Book Your Free Discovery Call
           </Button>
         </div>
       </section>

@@ -1,48 +1,13 @@
 
-import React, { useEffect, useState } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { CheckCircle } from 'lucide-react';
 
 const Success = () => {
-  const [searchParams] = useSearchParams();
-  const [sessionInfo, setSessionInfo] = useState<{
-    sessionId: string;
-    type: string;
-    calendlyUrl: string;
-  } | null>(null);
-
-  useEffect(() => {
-    const sessionId = searchParams.get('session_id');
-    const type = searchParams.get('type');
-    const calendlyUrl = searchParams.get('calendly');
-
-    if (sessionId && type && calendlyUrl) {
-      setSessionInfo({
-        sessionId,
-        type,
-        calendlyUrl: decodeURIComponent(calendlyUrl),
-      });
-    }
-  }, [searchParams]);
-
-  const handleScheduleSession = () => {
-    if (sessionInfo?.calendlyUrl) {
-      // Open Calendly in a new tab
-      window.open(sessionInfo.calendlyUrl, '_blank', 'width=800,height=600');
-    }
-  };
-
-  const getSessionTypeName = (type: string) => {
-    const typeMap: Record<string, string> = {
-      'meet-greet': 'Meet & Greet',
-      'intake': 'Intake Interview',
-      'early-bird': 'Early-bird Working Session',
-      'standard': 'Standard Working Session',
-      'weekly': 'Weekly Update',
-    };
-    return typeMap[type] || type;
+  const handleBookCall = () => {
+    window.open('https://calendly.com/altpathai-vki1/30min', '_blank', 'width=800,height=600');
   };
 
   return (
@@ -54,54 +19,39 @@ const Success = () => {
               <CheckCircle className="w-16 h-16 text-green-600" />
             </div>
             <CardTitle className="text-3xl font-bold text-emerald-800 mb-2">
-              Payment Successful!
+              Welcome to Your Journey!
             </CardTitle>
             <p className="text-lg text-gray-700">
-              You've taken the first step toward real change.
+              Thank you for taking the first step toward authentic living.
             </p>
           </CardHeader>
           
           <CardContent className="space-y-6">
-            {sessionInfo && (
-              <div className="bg-emerald-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-emerald-800 mb-2">
-                  Session Purchased:
-                </h3>
-                <p className="text-emerald-700">
-                  {getSessionTypeName(sessionInfo.type)}
-                </p>
-                <p className="text-sm text-emerald-600 mt-1">
-                  Session ID: {sessionInfo.sessionId}
-                </p>
-              </div>
-            )}
-
             <div className="text-center space-y-4">
               <h3 className="text-xl font-semibold text-gray-800">
-                Now, let's schedule your time.
+                Ready to Begin?
               </h3>
               <p className="text-gray-600">
-                Investment made. Commitment shown. Time to do the work.
+                Let's schedule your free discovery call to explore your unique path.
               </p>
               
               <div className="space-y-3">
                 <Button
-                  onClick={handleScheduleSession}
+                  onClick={handleBookCall}
                   className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 text-lg w-full"
-                  disabled={!sessionInfo?.calendlyUrl}
                 >
-                  📅 Schedule Your Session Now
+                  📅 Book Your Free Discovery Call
                 </Button>
                 
                 <p className="text-sm text-gray-500">
-                  You'll receive a confirmation email with session details after scheduling.
+                  30 minutes. No cost. No pressure. Just authentic conversation.
                 </p>
               </div>
             </div>
 
             <div className="border-t pt-6 text-center">
               <p className="text-gray-600 mb-4">
-                Questions about your upcoming session?
+                Want to explore more before we talk?
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
@@ -111,12 +61,14 @@ const Success = () => {
                   Return to Homepage
                 </Link>
                 <span className="hidden sm:inline text-gray-400">•</span>
-                <Link
-                  to="/pricing"
+                <a
+                  href="https://www.youtube.com/@altpathai"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-emerald-600 hover:text-emerald-700 underline"
                 >
-                  View All Sessions
-                </Link>
+                  Watch on YouTube
+                </a>
               </div>
             </div>
           </CardContent>
