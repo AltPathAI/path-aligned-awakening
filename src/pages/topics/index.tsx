@@ -36,7 +36,7 @@ const TopicsPage = () => {
     },
   });
 
-  const handleDelete = async (id: string) => {
+  const handleDelete = async (id: string): Promise<void> => {
     await deleteMutation.mutateAsync(id);
   };
 
