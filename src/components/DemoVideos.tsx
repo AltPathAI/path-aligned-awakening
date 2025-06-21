@@ -1,7 +1,6 @@
 
 import React from 'react';
 import YouTubeEmbed from './YouTubeEmbed';
-import QuestionTeaserThread from './QuestionTeaserThread';
 
 const DemoVideos = () => {
   const videos = [
@@ -28,12 +27,11 @@ const DemoVideos = () => {
         <h2 className="text-3xl font-bold text-center text-emerald-800 mb-12">
           Explore Your Journey
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {videos.map((video, index) => (
             <YouTubeEmbed key={index} {...video} />
           ))}
         </div>
-        <QuestionTeaserThread topicId="demo-videos" />
       </div>
     </section>
   );
