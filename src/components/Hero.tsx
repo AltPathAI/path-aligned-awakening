@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Youtube, Calendar, Wrench, Sprout } from 'lucide-react';
@@ -62,7 +61,8 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-neutral-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-          Pragmatism delivers working solutions; aesthetics refines them into everlasting elegance.
+          <span className="block mb-2">Pragmatism delivers working solutions;</span>
+          <span className="block">aesthetics refines them into everlasting elegance.</span>
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
