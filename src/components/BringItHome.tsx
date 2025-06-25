@@ -36,19 +36,6 @@ const BringItHome = () => {
         >
           Subscribe on YouTube
         </a>
-
-        {/* Consultation secondary CTA */}
-        <a
-          href="/consult"
-          className="inline-flex items-center gap-2 rounded-md border
-                     border-emerald-600 px-8 py-4 text-emerald-600
-                     hover:bg-emerald-600 hover:text-white transition-colors
-                     text-lg font-medium"
-        >
-          <span>
-            Intrigued?<br />Book a meet 'n greet
-          </span>
-        </a>
       </div>
     </section>
   );

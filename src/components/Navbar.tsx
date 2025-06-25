@@ -44,26 +44,6 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <Link
-              to="/consult"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/consult') 
-                  ? 'text-accent-600' 
-                  : 'text-neutral-700 hover:text-accent-600'
-              }`}
-            >
-              Consult
-            </Link>
-            <Link
-              to="/framework"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/framework') 
-                  ? 'text-accent-600' 
-                  : 'text-neutral-700 hover:text-accent-600'
-              }`}
-            >
-              Framework
-            </Link>
           </div>
         </div>
       </div>

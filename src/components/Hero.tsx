@@ -1,13 +1,9 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Calendar, Wrench, Sprout } from 'lucide-react';
+import { Wrench, Sprout } from 'lucide-react';
 
 const Hero = () => {
-  const handleBookConsultation = () => {
-    window.location.href = '/consult';
-  };
-
   return (
     <section id="hero" className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden with-watermark">
       {/* SVG Animation - Wrench → Sprout → Chair */}
@@ -62,23 +58,6 @@ const Hero = () => {
           <span className="block mb-3">Pragmatism delivers working solutions;</span>
           <span className="block">Aesthetics refines them into personal joy.</span>
         </p>
-        
-        <div className="flex justify-center">
-          <Button
-            onClick={handleBookConsultation}
-            variant="outline"
-            size="lg"
-            className="btn-primary border-accent-500 text-accent-600 hover:bg-accent-50 px-8 py-4 text-lg font-medium transition-all duration-150 hover:shadow-lg rounded-lg"
-          >
-            <img 
-              src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
-              alt="AltPath.ai Logo" 
-              className="glyph w-5 h-5 mr-2"
-            />
-            <Calendar className="w-5 h-5 mr-2" />
-            Book a Consultation
-          </Button>
-        </div>
       </div>
 
       <style>{`
