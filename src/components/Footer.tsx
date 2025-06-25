@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-stone-800 text-white">
+    <footer className="bg-slate-800 text-white">
       {/* Main Footer Content */}
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
@@ -17,10 +17,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Framework</a></li>
-              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Workshop</a></li>
-              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Journal</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Framework</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Case Studies</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Workshop</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Journal</a></li>
             </ul>
           </div>
 
@@ -28,21 +28,21 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Mastodon</a></li>
-              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">GitHub</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Mastodon</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">LinkedIn</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">GitHub</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div className="md:col-span-2">
             <h3 className="text-lg font-semibold mb-4">Start Your Journey</h3>
-            <p className="text-stone-300 mb-4">
+            <p className="text-slate-300 mb-4">
               Ready to apply Elegant Pragmatism to your next project?
             </p>
             <Button
               onClick={handleBookCall}
-              className="bg-amber-600 hover:bg-amber-500 text-white"
+              className="bg-teal-600 hover:bg-teal-500 text-white"
             >
               <Calendar className="w-4 h-4 mr-2" />
               Book Discovery Call
@@ -51,8 +51,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-stone-700 pt-8 text-center">
-          <p className="text-stone-400">
+        <div className="border-t border-slate-700 pt-8 text-center">
+          <p className="text-slate-400">
             Copy-left notice: Reuse anything; cite AltPath.ai.
           </p>
         </div>

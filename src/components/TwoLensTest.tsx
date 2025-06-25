@@ -13,26 +13,26 @@ const TwoLensTest = () => {
   };
 
   return (
-    <section className="py-24 bg-stone-50">
+    <section className="py-24 bg-slate-50">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-serif text-stone-800 mb-6">
+          <h2 className="text-5xl font-serif text-slate-800 mb-6">
             The Two-Lens Test
           </h2>
-          <p className="text-xl text-stone-600 leading-relaxed">
+          <p className="text-xl text-slate-600 leading-relaxed">
             A proposal must say "yes" to most items in both columns—or we refine until it can.
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-sm border border-stone-200 overflow-hidden">
+        <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
           {/* Tab Headers */}
           <div className="flex">
             <button
               onClick={() => setActiveTab('pragmatic')}
               className={`flex-1 py-6 px-8 text-lg font-medium transition-colors ${
                 activeTab === 'pragmatic'
-                  ? 'bg-stone-800 text-white'
-                  : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                  ? 'bg-slate-800 text-white'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
               }`}
             >
               Pragmatic Lens
@@ -41,8 +41,8 @@ const TwoLensTest = () => {
               onClick={() => setActiveTab('elegant')}
               className={`flex-1 py-6 px-8 text-lg font-medium transition-colors ${
                 activeTab === 'elegant'
-                  ? 'bg-amber-600 text-white'
-                  : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                  ? 'bg-teal-600 text-white'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
               }`}
             >
               Elegant Lens
@@ -58,7 +58,7 @@ const TwoLensTest = () => {
                     <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center">
                       <span className="text-white text-sm">✓</span>
                     </div>
-                    <span className="text-lg text-stone-700">{item}</span>
+                    <span className="text-lg text-slate-700">{item}</span>
                   </div>
                 ))}
               </div>
@@ -71,7 +71,7 @@ const TwoLensTest = () => {
                     <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center">
                       <span className="text-white text-sm">✓</span>
                     </div>
-                    <span className="text-lg text-stone-700">{item}</span>
+                    <span className="text-lg text-slate-700">{item}</span>
                   </div>
                 ))}
               </div>
@@ -83,7 +83,7 @@ const TwoLensTest = () => {
           <Button
             onClick={handleDownloadPDF}
             variant="outline"
-            className="border-amber-500 text-amber-700 hover:bg-amber-50"
+            className="border-teal-500 text-teal-700 hover:bg-teal-50"
           >
             Download One-Page PDF Checklist
           </Button>

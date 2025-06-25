@@ -12,12 +12,12 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-stone-50 to-amber-50 flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-br from-slate-50 to-teal-50 flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-10">
         <div className="w-full h-full flex items-center justify-center">
           <div className="animate-pulse">
-            <svg width="400" height="300" viewBox="0 0 400 300" className="text-stone-400">
+            <svg width="400" height="300" viewBox="0 0 400 300" className="text-slate-400">
               {/* Simple morphing house to bike to garden animation placeholder */}
               <rect x="150" y="120" width="100" height="80" fill="none" stroke="currentColor" strokeWidth="2" className="animate-[fade-in_3s_ease-in-out_infinite]" />
               <polygon points="150,120 200,80 250,120" fill="none" stroke="currentColor" strokeWidth="2" className="animate-[fade-in_3s_ease-in-out_infinite]" />
@@ -27,10 +27,10 @@ const Hero = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
-        <h1 className="text-6xl md:text-8xl font-serif font-light text-stone-800 mb-6 tracking-tight">
+        <h1 className="text-6xl md:text-8xl font-serif font-light text-slate-800 mb-6 tracking-tight">
           Elegant Pragmatism
         </h1>
-        <p className="text-xl md:text-2xl text-stone-600 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
+        <p className="text-xl md:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
           Craft solutions as practical as they are delightful—then prove each flourish works.
         </p>
         
@@ -38,7 +38,7 @@ const Hero = () => {
           <Button
             onClick={handleExploreFramework}
             size="lg"
-            className="bg-stone-800 hover:bg-amber-600 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105"
+            className="bg-teal-700 hover:bg-teal-600 text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105"
           >
             Explore the Framework
           </Button>
@@ -46,7 +46,7 @@ const Hero = () => {
             onClick={handleWorkshop}
             size="lg"
             variant="outline"
-            className="border-2 border-stone-300 text-stone-700 hover:bg-stone-800 hover:text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105"
+            className="border-2 border-teal-300 text-teal-700 hover:bg-teal-700 hover:text-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105"
           >
             Start a Two-Lens Workshop
           </Button>
