@@ -59,11 +59,6 @@ const BringItHome = () => {
                      hover:bg-emerald-600 hover:text-white transition-colors
                      text-lg font-medium"
         >
-          <img 
-            src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
-            alt="AltPath.ai Logo" 
-            className="h-5 w-5"
-          />
           <span>
             Intrigued?<br />Book a meet 'n greet
           </span>
