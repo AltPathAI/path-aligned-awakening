@@ -26,7 +26,7 @@ const BringItHome = () => {
         <br /><br />
         But beauty is in the eye of the beholder. And what is 'essential' to one may not be to another. It's never one size fits all.
         <br /><br />
-        Everyone is on an AltPath. And so, our adaptive AI helps you find your values, your essentials, your AltPath as defined by where you find beauty in the World.
+        Everyone is on an AltPath (Alternative Path). And so, our adaptive AI (AltPath.ai) helps you find your values, your essentials, and your optimal AltPath as defined by where you find beauty in the World.
       </p>
 
       <div className="flex flex-col sm:flex-row justify-center gap-6">
