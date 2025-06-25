@@ -16,38 +16,42 @@ const Hero = () => {
     <section className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden">
       {/* SVG Animation - Wrench → Sprout → Chair */}
       <div className="absolute inset-0 opacity-10 flex items-center justify-center">
-        <div className="group">
-          <svg width="200" height="140" viewBox="0 0 200 140" className="text-neutral-300">
-            {/* Wrench (0-1s) */}
-            <g className="animate-[morph_3s_ease-in-out_infinite] group-hover:animate-none">
-              <Wrench 
-                size={80} 
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 animate-[fade_3s_ease-in-out_infinite]" 
-              />
-            </g>
-            {/* Sprout (1-2s) */}
-            <g className="animate-[morph_3s_ease-in-out_infinite_1s] group-hover:animate-none">
-              <Sprout 
-                size={80} 
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 animate-[fade_3s_ease-in-out_infinite_1s]" 
-              />
-            </g>
-            {/* Chair (2-3s) - Using a simple SVG path for chair */}
-            <g className="animate-[morph_3s_ease-in-out_infinite_2s] group-hover:animate-none">
-              <svg 
-                width="80" 
-                height="80" 
-                viewBox="0 0 24 24" 
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 animate-[fade_3s_ease-in-out_infinite_2s]"
-              >
-                <path 
-                  d="M7 11V7a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4m-3 0V7M7 11v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8M7 11h10" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  fill="none"
-                />
-              </svg>
-            </g>
+        <div className="relative w-20 h-20">
+          {/* Wrench (visible 0-1s) */}
+          <Wrench 
+            size={80} 
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-neutral-300 animate-pulse" 
+            style={{
+              animation: 'fadeInOut 3s infinite',
+              animationDelay: '0s'
+            }}
+          />
+          {/* Sprout (visible 1-2s) */}
+          <Sprout 
+            size={80} 
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-neutral-300" 
+            style={{
+              animation: 'fadeInOut 3s infinite',
+              animationDelay: '1s'
+            }}
+          />
+          {/* Chair (visible 2-3s) - Using a simple SVG path for chair */}
+          <svg 
+            width="80" 
+            height="80" 
+            viewBox="0 0 24 24" 
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-neutral-300"
+            style={{
+              animation: 'fadeInOut 3s infinite',
+              animationDelay: '2s'
+            }}
+          >
+            <path 
+              d="M7 11V7a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4m-3 0V7M7 11v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8M7 11h10" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              fill="none"
+            />
           </svg>
         </div>
       </div>
@@ -82,17 +86,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes fade {
+      <style>{`
+        @keyframes fadeInOut {
           0%, 33.33% { opacity: 1; }
           33.34%, 66.66% { opacity: 0; }
           66.67%, 100% { opacity: 0; }
-        }
-        
-        @keyframes morph {
-          0%, 33.33% { transform: scale(1); }
-          33.34%, 66.66% { transform: scale(0.8); }
-          66.67%, 100% { transform: scale(1.1); }
         }
       `}</style>
     </section>
