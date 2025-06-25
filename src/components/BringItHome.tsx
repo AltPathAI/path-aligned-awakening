@@ -17,7 +17,7 @@ const BringItHome = () => {
       <p className="text-lg md:text-xl text-neutral-700 leading-relaxed max-w-2xl mx-auto mb-16">
         Each quality of life bucket marks a core life concern—health, safety, housing, social connections, time autonomy, income, education, meaningful work, civic engagement, purpose.
         <br /><br />
-        Elegant Pragmatism resolves the essentials first, then refines them into everyday elegance.
+        The principles of Elegant Pragmatism resolves these essentials first, then refines them into everyday elegance.
         <br /><br />
         But beauty is in the eye of the beholder. And what is 'essential' to one may not be to another. It's never one size fits all.
         <br /><br />
