@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { House, LeafyGreen, Bicycle, Bulb, ChartWithUpwardsTrend } from 'lucide-react';
+import { House, Leaf, Bike, Lightbulb, TrendingUp } from 'lucide-react';
 
 const EverydayBuckets = () => {
   const [hoveredBucket, setHoveredBucket] = useState<string | null>(null);
@@ -14,25 +14,25 @@ const EverydayBuckets = () => {
     },
     {
       id: 'food',
-      icon: LeafyGreen,
+      icon: Leaf,
       title: 'Food',
       move: 'Seasonal staples + "beauty premium" spices; batch-cook base, garnish fresh'
     },
     {
       id: 'mobility',
-      icon: Bicycle,
+      icon: Bike,
       title: 'Mobility',
       move: '15-minute neighbourhood + folding bike + car-share for heavy lifts'
     },
     {
       id: 'utilities',
-      icon: Bulb,
+      icon: Lightbulb,
       title: 'Utilities',
       move: 'Layered LEDs, solar-ready roof, grey-water planters'
     },
     {
       id: 'savings',
-      icon: ChartWithUpwardsTrend,
+      icon: TrendingUp,
       title: 'Savings',
       move: 'Progress-bar art poster turns frugality into a game'
     }
