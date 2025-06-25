@@ -14,19 +14,19 @@ const Navbar = () => {
           {/* Logo lock-up */}
           <a href="/#hero" className="flex items-center gap-2 text-lg font-medium text-neutral-800 hover:opacity-80 transition-opacity">
             <img 
-              src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
-              alt="AltPathAI Logo" 
-              className="h-6 w-6"
+              src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
+              alt="AltPath.ai Logo" 
+              className="h-8 w-8"
             />
-            AltPathAI
+            AltPath.ai
           </a>
 
           {/* Mobile burger with logo */}
           <button className="relative z-50 flex flex-col gap-1 md:hidden p-2">
             <span className="h-0.5 w-6 bg-neutral-800 transition-all" />
             <img 
-              src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
-              alt="AltPathAI Logo" 
+              src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
+              alt="AltPath.ai Logo" 
               className="h-3.5 w-3.5"
             />
             <span className="h-0.5 w-6 bg-neutral-800 transition-all" />

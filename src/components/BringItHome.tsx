@@ -18,9 +18,9 @@ const BringItHome = () => {
   return (
     <section id="bring-it-home" className="text-center px-4 py-24 md:py-32 bg-white mb-24 md:mb-32">
       <img 
-        src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
-        alt="AltPathAI Logo" 
-        className="mx-auto mb-6 h-8 w-8"
+        src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
+        alt="AltPath.ai Logo" 
+        className="mx-auto mb-6 h-12 w-12"
       />
 
       <h2 className="font-serif text-2xl md:text-3xl mb-4 text-neutral-800">
@@ -57,9 +57,9 @@ const BringItHome = () => {
                      h-12"
         >
           <img 
-            src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
-            alt="AltPathAI Logo" 
-            className="h-4 w-4"
+            src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
+            alt="AltPath.ai Logo" 
+            className="h-5 w-5"
           />
           Book a Path-Mapping Call
         </a>
