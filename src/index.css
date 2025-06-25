@@ -123,7 +123,10 @@
   right: -60px;
   width: 160px;
   height: 160px;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23065f46" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 3 19 7 19 17 12 21 5 17 5 7"/><path d="M12 3v18M5 7l14 10M19 7L5 17"/></svg>');
+  background-image: url('/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0.05;
   transform: rotate(12deg);
   pointer-events: none;

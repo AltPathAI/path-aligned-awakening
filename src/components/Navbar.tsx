@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BadgeOutline } from '@/components/BadgeOutline';
 
 const Navbar = () => {
   const location = useLocation();
@@ -14,14 +13,22 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo lock-up */}
           <a href="/#hero" className="flex items-center gap-2 text-lg font-medium text-neutral-800 hover:opacity-80 transition-opacity">
-            <BadgeOutline className="h-6 w-6 text-brand-green" />
+            <img 
+              src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
+              alt="AltPathAI Logo" 
+              className="h-6 w-6"
+            />
             AltPathAI
           </a>
 
-          {/* Mobile burger with badge */}
+          {/* Mobile burger with logo */}
           <button className="relative z-50 flex flex-col gap-1 md:hidden p-2">
             <span className="h-0.5 w-6 bg-neutral-800 transition-all" />
-            <BadgeOutline className="h-3.5 w-3.5 text-neutral-800" />
+            <img 
+              src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
+              alt="AltPathAI Logo" 
+              className="h-3.5 w-3.5"
+            />
             <span className="h-0.5 w-6 bg-neutral-800 transition-all" />
           </button>
 

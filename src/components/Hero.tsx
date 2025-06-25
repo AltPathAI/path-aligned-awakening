@@ -2,7 +2,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Calendar, Wrench, Sprout } from 'lucide-react';
-import { BadgeOutline } from '@/components/BadgeOutline';
 
 const Hero = () => {
   const handleBookConsultation = () => {
@@ -71,7 +70,11 @@ const Hero = () => {
             size="lg"
             className="btn-primary border-accent-500 text-accent-600 hover:bg-accent-50 px-8 py-4 text-lg font-medium transition-all duration-150 hover:shadow-lg rounded-lg"
           >
-            <BadgeOutline className="glyph w-3 h-3 mr-2" />
+            <img 
+              src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
+              alt="AltPathAI Logo" 
+              className="glyph w-3 h-3 mr-2"
+            />
             <Calendar className="w-5 h-5 mr-2" />
             Book a Consultation
           </Button>

@@ -1,23 +1,6 @@
 
 import React from 'react';
 
-function HexPathInline(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <polygon points="12 3 19 7 19 17 12 21 5 17 5 7" />
-      <path d="M12 3v18M5 7l14 10M19 7L5 17" />
-    </svg>
-  );
-}
-
 function YouTubeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -34,7 +17,11 @@ function YouTubeIcon(props: React.SVGProps<SVGSVGElement>) {
 const BringItHome = () => {
   return (
     <section id="bring-it-home" className="text-center px-4 py-24 md:py-32 bg-white mb-24 md:mb-32">
-      <HexPathInline className="mx-auto mb-6 h-8 w-8 text-emerald-500" />
+      <img 
+        src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
+        alt="AltPathAI Logo" 
+        className="mx-auto mb-6 h-8 w-8"
+      />
 
       <h2 className="font-serif text-2xl md:text-3xl mb-4 text-neutral-800">
         From Buckets&nbsp;to&nbsp;Paths
@@ -69,7 +56,11 @@ const BringItHome = () => {
                      hover:bg-emerald-600 hover:text-white transition-colors
                      h-12"
         >
-          <HexPathInline className="h-4 w-4" />
+          <img 
+            src="/lovable-uploads/965cb45d-106b-4db5-a8b9-fb6d846eff75.png" 
+            alt="AltPathAI Logo" 
+            className="h-4 w-4"
+          />
           Book a Path-Mapping Call
         </a>
       </div>
