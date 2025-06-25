@@ -63,7 +63,9 @@ const BringItHome = () => {
             alt="AltPath.ai Logo" 
             className="h-5 w-5"
           />
-          Intrigued? Book a meet 'n greet
+          <span>
+            Intrigued?<br />Book a meet 'n greet
+          </span>
         </a>
       </div>
     </section>
