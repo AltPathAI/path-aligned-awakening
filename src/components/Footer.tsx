@@ -1,13 +1,9 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Youtube, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 
 const Footer = () => {
-  const handleYouTubeSubscribe = () => {
-    window.open('https://www.youtube.com/@AltPath', '_blank');
-  };
-
   const handleBookConsultation = () => {
     window.location.href = '/consult';
   };
@@ -32,16 +28,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Right: CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              onClick={handleYouTubeSubscribe}
-              variant="outline"
-              className="border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white"
-            >
-              <Youtube className="w-4 h-4 mr-2" />
-              Subscribe on YouTube
-            </Button>
+          {/* Right: CTA */}
+          <div>
             <Button
               onClick={handleBookConsultation}
               className="bg-accent-600 hover:bg-accent-500 text-white"
