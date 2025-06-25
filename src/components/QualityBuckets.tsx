@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { 
   Heart, 
   Shield, 
@@ -127,8 +127,6 @@ const buckets: Bucket[] = [
 ];
 
 const QualityBuckets = () => {
-  const [openId, setOpenId] = useState<string | null>(null);
-
   return (
     <section id="quality-buckets" className="py-20 md:py-28 bg-white">
       <div className="mx-auto max-w-5xl px-4 text-center">
@@ -137,40 +135,26 @@ const QualityBuckets = () => {
         </h2>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {buckets.map(b => {
-            const isOpen = openId === b.id;
-            return (
-              <div
-                key={b.id}
-                className="rounded-xl border border-neutral-200 bg-neutral-50 p-6"
-              >
-                <button
-                  className="flex w-full flex-col items-center gap-2 text-neutral-700"
-                  aria-expanded={isOpen}
-                  onClick={() =>
-                    setOpenId(isOpen ? null : b.id)
-                  }
-                >
-                  {b.icon}
-                  <h3 className="mt-1 font-medium text-neutral-800">{b.title}</h3>
-                  <p className="text-sm text-neutral-600">{b.blurb}</p>
-                </button>
-
-                <div
-                  className="transition-all duration-300 overflow-hidden"
-                  style={{ maxHeight: isOpen ? "400px" : "0px" }}
-                >
-                  <ul className="mt-4 text-left list-disc list-inside space-y-1">
-                    {b.items.map(line => (
-                      <li key={line} className="text-sm text-neutral-700">
-                        {line}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+          {buckets.map(b => (
+            <div
+              key={b.id}
+              className="rounded-xl border border-neutral-200 bg-neutral-50 p-6"
+            >
+              <div className="flex flex-col items-center gap-2 text-neutral-700 mb-4">
+                {b.icon}
+                <h3 className="mt-1 font-medium text-neutral-800">{b.title}</h3>
+                <p className="text-sm text-neutral-600">{b.blurb}</p>
               </div>
-            );
-          })}
+
+              <ul className="text-left list-disc list-inside space-y-1">
+                {b.items.map(line => (
+                  <li key={line} className="text-sm text-neutral-700">
+                    {line}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
