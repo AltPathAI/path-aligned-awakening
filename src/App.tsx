@@ -6,10 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
-import Workshop from "./pages/Workshop";
-import Pricing from "./pages/Pricing";
-import Success from "./pages/Success";
-import Cancel from "./pages/Cancel";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -31,10 +27,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/success" element={<Success />} />
-            <Route path="/cancel" element={<Cancel />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            {/* Catch-all route for 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
