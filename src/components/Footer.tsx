@@ -13,6 +13,23 @@ const Footer = () => {
       {/* Main Footer Content */}
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
+          {/* Logo and Brand */}
+          <div>
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-10 h-10 flex items-center justify-center bg-teal-600 rounded-lg">
+                <img 
+                  src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
+                  alt="AltPath.ai Logo" 
+                  className="w-8 h-8 object-contain brightness-0 invert"
+                />
+              </div>
+              <span className="text-lg font-bold text-white">AltPath.ai</span>
+            </div>
+            <p className="text-slate-300 text-sm">
+              Elegant Pragmatism for the thoughtful builder.
+            </p>
+          </div>
+
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
@@ -35,7 +52,7 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="md:col-span-2">
+          <div>
             <h3 className="text-lg font-semibold mb-4">Start Your Journey</h3>
             <p className="text-slate-300 mb-4">
               Ready to apply Elegant Pragmatism to your next project?
