@@ -13,11 +13,11 @@ const Footer = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 py-16">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20">
         <div className="flex justify-center items-center">
           {/* Copy-left notice only */}
           <div className="text-center">
-            <p className="text-neutral-300 text-sm">
+            <p className="text-neutral-300 text-base">
               Copy-left notice: Reuse anything; cite AltPath.ai.
             </p>
           </div>

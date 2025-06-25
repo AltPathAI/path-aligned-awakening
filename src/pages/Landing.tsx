@@ -14,13 +14,13 @@ const Landing = () => {
       <ScrollProgress />
       <Navbar />
       <Hero />
-      <div className="with-watermark">
+      <div className="with-watermark mt-16 md:mt-24">
         <TwoLensAccordion />
       </div>
-      <div className="mt-24 md:mt-32 with-watermark">
+      <div className="mt-20 md:mt-32 with-watermark">
         <QualityBuckets />
       </div>
-      <div className="with-watermark">
+      <div className="with-watermark mt-16 md:mt-24">
         <BringItHome />
       </div>
       <Footer />

@@ -52,14 +52,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-        <h1 className="text-5xl md:text-7xl font-serif font-light text-neutral-800 mb-8 tracking-tight leading-tight">
+      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <h1 className="text-5xl md:text-7xl font-serif font-light text-neutral-800 mb-10 tracking-tight leading-tight">
           <span className="block">Solve problems first.</span>
           <span className="block"><em className="text-accent-600">Beautify answers second.</em></span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-neutral-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-          <span className="block mb-2">Pragmatism delivers working solutions;</span>
+        <p className="text-xl md:text-2xl text-neutral-600 mb-16 max-w-3xl mx-auto font-light leading-relaxed">
+          <span className="block mb-3">Pragmatism delivers working solutions;</span>
           <span className="block">Aesthetics refines them into everlasting elegance.</span>
         </p>
         
