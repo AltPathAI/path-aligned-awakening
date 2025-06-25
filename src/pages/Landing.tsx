@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import OriginBlock from '@/components/OriginBlock';
 import TwoLensAccordion from '@/components/TwoLensAccordion';
-import BucketsGrid from '@/components/BucketsGrid';
+import QualityBuckets from '@/components/QualityBuckets';
 import Footer from '@/components/Footer';
 
 const Landing = () => {
@@ -14,7 +14,7 @@ const Landing = () => {
       <Hero />
       <OriginBlock />
       <TwoLensAccordion />
-      <BucketsGrid />
+      <QualityBuckets />
       <Footer />
     </div>
   );
