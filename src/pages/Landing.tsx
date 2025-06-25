@@ -1,14 +1,24 @@
 
 import React from 'react';
 import Hero from '@/components/Hero';
-import DemoVideos from '@/components/DemoVideos';
+import WhatAndWhy from '@/components/WhatAndWhy';
+import TwoLensTest from '@/components/TwoLensTest';
+import EverydayBuckets from '@/components/EverydayBuckets';
+import ConvivialElegance from '@/components/ConvivialElegance';
+import NextSteps from '@/components/NextSteps';
+import About from '@/components/About';
 import Footer from '@/components/Footer';
 
 const Landing = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-emerald-50">
+    <div className="min-h-screen bg-white">
       <Hero />
-      <DemoVideos />
+      <WhatAndWhy />
+      <TwoLensTest />
+      <EverydayBuckets />
+      <ConvivialElegance />
+      <NextSteps />
+      <About />
       <Footer />
     </div>
   );

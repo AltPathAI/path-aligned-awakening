@@ -9,27 +9,55 @@ const Footer = () => {
   };
 
   return (
-    <>
-      {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-teal-600 to-emerald-700">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Find Your Authentic Path?
-          </h2>
-          <p className="text-xl text-teal-100 mb-8">
-            Join thousands who've discovered their values-aligned journey. Your authentic life is waiting.
-          </p>
-          <Button
-            size="lg"
-            onClick={handleBookCall}
-            className="bg-white text-teal-700 hover:bg-teal-50 px-8 py-3 text-lg shadow-lg"
-          >
-            <Calendar className="w-5 h-5 mr-2" />
-            Book Your Free Discovery Call
-          </Button>
+    <footer className="bg-stone-800 text-white">
+      {/* Main Footer Content */}
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-4 gap-8 mb-12">
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Framework</a></li>
+              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Case Studies</a></li>
+              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Workshop</a></li>
+              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Journal</a></li>
+            </ul>
+          </div>
+
+          {/* Social */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Connect</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Mastodon</a></li>
+              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">LinkedIn</a></li>
+              <li><a href="#" className="text-stone-300 hover:text-white transition-colors">GitHub</a></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div className="md:col-span-2">
+            <h3 className="text-lg font-semibold mb-4">Start Your Journey</h3>
+            <p className="text-stone-300 mb-4">
+              Ready to apply Elegant Pragmatism to your next project?
+            </p>
+            <Button
+              onClick={handleBookCall}
+              className="bg-amber-600 hover:bg-amber-500 text-white"
+            >
+              <Calendar className="w-4 h-4 mr-2" />
+              Book Discovery Call
+            </Button>
+          </div>
         </div>
-      </section>
-    </>
+
+        {/* Copyright */}
+        <div className="border-t border-stone-700 pt-8 text-center">
+          <p className="text-stone-400">
+            Copy-left notice: Reuse anything; cite AltPath.ai.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
 
