@@ -10,19 +10,19 @@ const TwoLensAccordion = () => {
   };
 
   const pragmaticItems = [
-    'Problem-fit — Does it remove a real pain-point?',
-    'Feasibility — Can people afford, build, or learn it?',
-    'Efficiency — Does it maximise benefit per unit time / energy / cost?',
-    'Resilience — Will it still work when resources shrink?',
-    'Reproducibility — Could peers copy it with a weekend's guidance?'
+    "Problem-fit — Does it remove a real pain-point?",
+    "Feasibility — Can people afford, build, or learn it?",
+    "Efficiency — Does it maximise benefit per unit time / energy / cost?",
+    "Resilience — Will it still work when resources shrink?",
+    "Reproducibility — Could peers copy it with a weekend's guidance?"
   ];
 
   const elegantItems = [
-    'Simplicity — Is nothing superfluous; can it be sketched on one page?',
-    'Harmony — Do the parts feel proportionate and coherent?',
-    'Surprise — Does it offer a small moment of "oh, that's neat"?',
-    'Sensory Pleasure — Does it invite touch, sight, or lingering?',
-    'Uplift — Do users treat the object—and each other—with more care?'
+    "Simplicity — Is nothing superfluous; can it be sketched on one page?",
+    "Harmony — Do the parts feel proportionate and coherent?",
+    "Surprise — Does it offer a small moment of \"oh, that's neat\"?",
+    "Sensory Pleasure — Does it invite touch, sight, or lingering?",
+    "Uplift — Do users treat the object—and each other—with more care?"
   ];
 
   return (
