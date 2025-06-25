@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 function YouTubeIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -27,10 +28,12 @@ const BringItHome = () => {
       </h2>
 
       <p className="text-lg md:text-xl text-neutral-700 leading-relaxed max-w-2xl mx-auto mb-16">
-        Each bucket marks a core life concern—water, safety, purpose.
+        Each quality of life bucket marks a core life concern—water, safety, purpose.
         Elegant&nbsp;Pragmatism resolves the essentials first, then refines
-        them into everyday elegance. Our adaptive AI stays aligned with these
-        considered routes.
+        them into everyday elegance. But beauty is in the eye of the beholder.
+        And what is 'essential' to one may not be to another. It's never one size fits all.
+        Everyone is on an AltPath. And so, our adaptive AI helps you find your path,
+        your essentials, the life defined by where you find beauty in the World.
       </p>
 
       <div className="flex flex-col sm:flex-row justify-center gap-6">
