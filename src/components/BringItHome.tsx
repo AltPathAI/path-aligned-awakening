@@ -15,7 +15,7 @@ const BringItHome = () => {
       </h2>
 
       <p className="text-lg md:text-xl text-neutral-700 leading-relaxed max-w-2xl mx-auto mb-16">
-        Each quality of life bucket marks a core life concern—water, safety, purpose.
+        Each quality of life bucket marks a core life concern—health, safety, housing, social connections, time autonomy, income, education, meaningful work, civic engagement, purpose.
         <br /><br />
         Elegant Pragmatism resolves the essentials first, then refines them into everyday elegance.
         <br /><br />
