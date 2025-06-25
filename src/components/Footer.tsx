@@ -1,13 +1,7 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Calendar } from 'lucide-react';
 
 const Footer = () => {
-  const handleBookConsultation = () => {
-    window.location.href = '/consult';
-  };
-
   return (
     <footer className="bg-neutral-800 text-white relative overflow-hidden">
       {/* Logo Watermark */}
@@ -20,23 +14,12 @@ const Footer = () => {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-16">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-          {/* Left: Creative Commons Notice */}
-          <div className="text-center md:text-left">
+        <div className="flex justify-center items-center">
+          {/* Copy-left notice only */}
+          <div className="text-center">
             <p className="text-neutral-300 text-sm">
               Copy-left notice: Reuse anything; cite AltPath.ai.
             </p>
-          </div>
-
-          {/* Right: CTA */}
-          <div>
-            <Button
-              onClick={handleBookConsultation}
-              className="bg-accent-600 hover:bg-accent-500 text-white"
-            >
-              <Calendar className="w-4 h-4 mr-2" />
-              Book a Consultation
-            </Button>
           </div>
         </div>
       </div>

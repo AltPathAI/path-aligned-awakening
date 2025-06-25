@@ -2,7 +2,6 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import OriginBlock from '@/components/OriginBlock';
 import TwoLensAccordion from '@/components/TwoLensAccordion';
 import QualityBuckets from '@/components/QualityBuckets';
 import BringItHome from '@/components/BringItHome';
@@ -13,9 +12,10 @@ const Landing = () => {
     <div className="min-h-screen bg-neutral-50">
       <Navbar />
       <Hero />
-      <OriginBlock />
       <TwoLensAccordion />
-      <QualityBuckets />
+      <div className="mt-24 md:mt-32">
+        <QualityBuckets />
+      </div>
       <BringItHome />
       <Footer />
     </div>
