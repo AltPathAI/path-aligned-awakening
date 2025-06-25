@@ -29,13 +29,13 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
         {/* Logo prominently displayed */}
         <div className="mb-8 flex justify-center">
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
             <img 
               src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
               alt="AltPath.ai Logo" 
-              className="w-20 h-20 mx-auto mb-4"
+              className="w-32 h-32 mx-auto mb-6"
             />
-            <div className="text-2xl font-bold text-teal-900">AltPath.ai</div>
+            <div className="text-3xl font-bold text-teal-900">AltPath.ai</div>
           </div>
         </div>
 

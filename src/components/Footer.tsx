@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Calendar } from 'lucide-react';
@@ -16,14 +15,14 @@ const Footer = () => {
           {/* Logo and Brand */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 flex items-center justify-center bg-teal-600 rounded-lg">
+              <div className="w-12 h-12 flex items-center justify-center bg-teal-600 rounded-lg">
                 <img 
                   src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
                   alt="AltPath.ai Logo" 
-                  className="w-8 h-8 object-contain brightness-0 invert"
+                  className="w-10 h-10 object-contain brightness-0 invert"
                 />
               </div>
-              <span className="text-lg font-bold text-white">AltPath.ai</span>
+              <span className="text-xl font-bold text-white">AltPath.ai</span>
             </div>
             <p className="text-slate-300 text-sm">
               Elegant Pragmatism for the thoughtful builder.
