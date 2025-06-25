@@ -1,88 +1,42 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
-
+/* Design System Variables */
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 180 100% 15%;
+    /* Color Palette */
+    --neutral-50: #F7F7F5;
+    --neutral-100: #EEEEEC;
+    --neutral-200: #DDDDD9;
+    --neutral-300: #CCCCCC;
+    --neutral-600: #666666;
+    --neutral-800: #2E2E2E;
+    --accent-500: #56C2A5;
+    --accent-600: #4AB396;
+    --accent-50: #F0FAF7;
 
-    --card: 0 0% 100%;
-    --card-foreground: 180 100% 15%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 180 100% 15%;
-
-    --primary: 180 100% 20%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 180 30% 95%;
-    --secondary-foreground: 180 100% 15%;
-
-    --muted: 180 30% 95%;
-    --muted-foreground: 180 20% 45%;
-
-    --accent: 180 50% 85%;
-    --accent-foreground: 180 100% 15%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 180 30% 85%;
-    --input: 180 30% 85%;
-    --ring: 180 100% 20%;
-
+    /* Shadcn Variables */
+    --background: var(--neutral-50);
+    --foreground: var(--neutral-800);
+    --card: var(--neutral-50);
+    --card-foreground: var(--neutral-800);
+    --popover: var(--neutral-50);
+    --popover-foreground: var(--neutral-800);
+    --primary: var(--accent-600);
+    --primary-foreground: var(--neutral-50);
+    --secondary: var(--neutral-100);
+    --secondary-foreground: var(--neutral-800);
+    --muted: var(--neutral-100);
+    --muted-foreground: var(--neutral-600);
+    --accent: var(--accent-50);
+    --accent-foreground: var(--neutral-800);
+    --border: var(--neutral-200);
+    --input: var(--neutral-200);
+    --ring: var(--accent-600);
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 180 100% 15%;
-    --sidebar-primary: 180 100% 20%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 180 30% 95%;
-    --sidebar-accent-foreground: 180 100% 15%;
-    --sidebar-border: 180 30% 85%;
-    --sidebar-ring: 180 100% 20%;
-  }
-
-  .dark {
-    --background: 180 100% 4%;
-    --foreground: 180 30% 95%;
-
-    --card: 180 100% 4%;
-    --card-foreground: 180 30% 95%;
-
-    --popover: 180 100% 4%;
-    --popover-foreground: 180 30% 95%;
-
-    --primary: 180 50% 70%;
-    --primary-foreground: 180 100% 4%;
-
-    --secondary: 180 50% 15%;
-    --secondary-foreground: 180 30% 95%;
-
-    --muted: 180 50% 15%;
-    --muted-foreground: 180 20% 65%;
-
-    --accent: 180 50% 15%;
-    --accent-foreground: 180 30% 95%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 180 50% 15%;
-    --input: 180 50% 15%;
-    --ring: 180 50% 70%;
-    --sidebar-background: 180 100% 4%;
-    --sidebar-foreground: 180 30% 95%;
-    --sidebar-primary: 180 50% 70%;
-    --sidebar-primary-foreground: 180 100% 4%;
-    --sidebar-accent: 180 50% 15%;
-    --sidebar-accent-foreground: 180 30% 95%;
-    --sidebar-border: 180 50% 15%;
-    --sidebar-ring: 180 50% 70%;
   }
 }
 
@@ -93,5 +47,91 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
   }
+
+  h1, h2, h3 {
+    font-family: 'Cormorant', Georgia, serif;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 4vw + 1rem, 4rem);
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
+    line-height: 1.2;
+  }
+
+  /* Content width constraint */
+  .content-width {
+    max-width: 68ch;
+  }
+
+  /* Section spacing */
+  .section-spacing {
+    padding-top: min(15vh, 10rem);
+    padding-bottom: min(15vh, 10rem);
+  }
+
+  /* Button styles */
+  .btn-primary {
+    border-radius: 8px;
+    transition: all 150ms ease-out;
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Focus styles for accessibility */
+  :focus-visible {
+    outline: 2px dotted var(--accent-600);
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Custom animations */
+  @keyframes morph {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    33% { transform: scale(0.8) rotate(10deg); opacity: 0.7; }
+    66% { transform: scale(1.1) rotate(-5deg); opacity: 0.9; }
+  }
+}
+
+/* Custom color classes */
+@layer utilities {
+  .text-neutral-50 { color: var(--neutral-50); }
+  .text-neutral-100 { color: var(--neutral-100); }
+  .text-neutral-200 { color: var(--neutral-200); }
+  .text-neutral-300 { color: var(--neutral-300); }
+  .text-neutral-600 { color: var(--neutral-600); }
+  .text-neutral-800 { color: var(--neutral-800); }
+  .text-accent-500 { color: var(--accent-500); }
+  .text-accent-600 { color: var(--accent-600); }
+  
+  .bg-neutral-50 { background-color: var(--neutral-50); }
+  .bg-neutral-100 { background-color: var(--neutral-100); }
+  .bg-neutral-200 { background-color: var(--neutral-200); }
+  .bg-neutral-800 { background-color: var(--neutral-800); }
+  .bg-accent-50 { background-color: var(--accent-50); }
+  .bg-accent-500 { background-color: var(--accent-500); }
+  .bg-accent-600 { background-color: var(--accent-600); }
+  
+  .border-accent-500 { border-color: var(--accent-500); }
+  .border-accent-600 { border-color: var(--accent-600); }
+  
+  .hover\:bg-accent-500:hover { background-color: var(--accent-500); }
+  .hover\:bg-accent-600:hover { background-color: var(--accent-600); }
 }
