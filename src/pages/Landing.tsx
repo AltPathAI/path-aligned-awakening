@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import OriginBlock from '@/components/OriginBlock';
 import TwoLensAccordion from '@/components/TwoLensAccordion';
 import QualityBuckets from '@/components/QualityBuckets';
+import BringItHome from '@/components/BringItHome';
 import Footer from '@/components/Footer';
 
 const Landing = () => {
@@ -15,6 +16,7 @@ const Landing = () => {
       <OriginBlock />
       <TwoLensAccordion />
       <QualityBuckets />
+      <BringItHome />
       <Footer />
     </div>
   );

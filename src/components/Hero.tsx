@@ -1,13 +1,9 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Youtube, Calendar, Wrench, Sprout } from 'lucide-react';
+import { Calendar, Wrench, Sprout } from 'lucide-react';
 
 const Hero = () => {
-  const handleYouTubeSubscribe = () => {
-    window.open('https://www.youtube.com/@AltPath', '_blank');
-  };
-
   const handleBookConsultation = () => {
     window.location.href = '/consult';
   };
@@ -67,15 +63,7 @@ const Hero = () => {
           <span className="block">Aesthetics refines them into everlasting elegance.</span>
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            onClick={handleYouTubeSubscribe}
-            size="lg"
-            className="bg-accent-600 hover:bg-accent-500 text-white px-8 py-4 text-lg font-medium transition-all duration-150 hover:shadow-lg rounded-lg"
-          >
-            <Youtube className="w-5 h-5 mr-2" />
-            Subscribe on YouTube
-          </Button>
+        <div className="flex justify-center">
           <Button
             onClick={handleBookConsultation}
             variant="outline"
