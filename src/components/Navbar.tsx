@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { BadgeOutline } from '@/components/BadgeOutline';
 
 const Navbar = () => {
   const location = useLocation();
@@ -8,17 +9,23 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white shadow-sm border-b border-neutral-200 sticky top-0 z-50">
+    <nav className="bg-white/80 backdrop-blur shadow-sm border-b border-neutral-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center group">
-            <img 
-              src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
-              alt="AltPath.ai Logo" 
-              className="h-8 max-w-[140px] object-contain group-hover:opacity-80 transition-opacity"
-            />
-          </Link>
+          {/* Logo lock-up */}
+          <a href="/#hero" className="flex items-center gap-2 text-lg font-medium text-neutral-800 hover:opacity-80 transition-opacity">
+            <BadgeOutline className="h-6 w-6 text-brand-green" />
+            AltPathAI
+          </a>
 
+          {/* Mobile burger with badge */}
+          <button className="relative z-50 flex flex-col gap-1 md:hidden p-2">
+            <span className="h-0.5 w-6 bg-neutral-800 transition-all" />
+            <BadgeOutline className="h-3.5 w-3.5 text-neutral-800" />
+            <span className="h-0.5 w-6 bg-neutral-800 transition-all" />
+          </button>
+
+          {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"

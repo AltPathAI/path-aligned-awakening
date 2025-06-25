@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Calendar, Wrench, Sprout } from 'lucide-react';
+import { BadgeOutline } from '@/components/BadgeOutline';
 
 const Hero = () => {
   const handleBookConsultation = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden with-watermark">
       {/* SVG Animation - Wrench → Sprout → Chair */}
       <div className="absolute inset-0 opacity-10 flex items-center justify-center">
         <div className="relative w-20 h-20">
@@ -68,8 +69,9 @@ const Hero = () => {
             onClick={handleBookConsultation}
             variant="outline"
             size="lg"
-            className="border-accent-500 text-accent-600 hover:bg-accent-50 px-8 py-4 text-lg font-medium transition-all duration-150 hover:shadow-lg rounded-lg"
+            className="btn-primary border-accent-500 text-accent-600 hover:bg-accent-50 px-8 py-4 text-lg font-medium transition-all duration-150 hover:shadow-lg rounded-lg"
           >
+            <BadgeOutline className="glyph w-3 h-3 mr-2" />
             <Calendar className="w-5 h-5 mr-2" />
             Book a Consultation
           </Button>

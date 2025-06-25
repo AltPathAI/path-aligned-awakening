@@ -17,6 +17,7 @@
     --accent-500: #56C2A5;
     --accent-600: #4AB396;
     --accent-50: #F0FAF7;
+    --brand-green: #065f46;
 
     /* Shadcn Variables */
     --background: var(--neutral-50);
@@ -110,6 +111,39 @@
   }
 }
 
+/* Section watermark */
+.with-watermark {
+  position: relative;
+}
+
+.with-watermark::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  width: 160px;
+  height: 160px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23065f46" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 3 19 7 19 17 12 21 5 17 5 7"/><path d="M12 3v18M5 7l14 10M19 7L5 17"/></svg>');
+  opacity: 0.05;
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+
+/* CTA hover micro glyph */
+.btn-primary, .btn-secondary {
+  @apply inline-flex items-center gap-2 transition;
+}
+
+.btn-primary:hover .glyph,
+.btn-secondary:hover .glyph {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.glyph {
+  @apply -translate-x-2 opacity-0 transition duration-200;
+}
+
 /* Custom color classes */
 @layer utilities {
   .text-neutral-50 { color: var(--neutral-50); }
@@ -120,6 +154,7 @@
   .text-neutral-800 { color: var(--neutral-800); }
   .text-accent-500 { color: var(--accent-500); }
   .text-accent-600 { color: var(--accent-600); }
+  .text-brand-green { color: var(--brand-green); }
   
   .bg-neutral-50 { background-color: var(--neutral-50); }
   .bg-neutral-100 { background-color: var(--neutral-100); }
@@ -128,6 +163,7 @@
   .bg-accent-50 { background-color: var(--accent-50); }
   .bg-accent-500 { background-color: var(--accent-500); }
   .bg-accent-600 { background-color: var(--accent-600); }
+  .bg-brand-green { background-color: var(--brand-green); }
   
   .border-accent-500 { border-color: var(--accent-500); }
   .border-accent-600 { border-color: var(--accent-600); }
