@@ -20,7 +20,7 @@ const BringItHome = () => {
       <img 
         src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
         alt="AltPath.ai Logo" 
-        className="mx-auto mb-6 h-12 w-12"
+        className="mx-auto mb-6 h-144 w-144"
       />
 
       <h2 className="font-serif text-2xl md:text-3xl mb-4 text-neutral-800">
