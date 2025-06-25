@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
+import { openCalendlyUrl } from '@/utils/urlValidation';
 
 interface AppointmentType {
   id: string;
@@ -23,7 +24,7 @@ const PaymentSchedulerEmbed = () => {
   ];
 
   const handleSchedule = (calendlyUrl: string) => {
-    window.open(calendlyUrl, '_blank', 'width=800,height=600');
+    openCalendlyUrl(calendlyUrl);
   };
 
   return (

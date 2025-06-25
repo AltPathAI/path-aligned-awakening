@@ -1,7 +1,12 @@
 
 import React from 'react';
+import { openSecureUrl } from '@/utils/urlValidation';
 
 const BringItHome = () => {
+  const handleYouTubeClick = () => {
+    openSecureUrl('https://www.youtube.com/@AltPathAI');
+  };
+
   return (
     <section id="bring-it-home" className="text-center px-6 py-32 md:py-40 bg-white">
       <img 
@@ -26,16 +31,14 @@ const BringItHome = () => {
 
       <div className="flex flex-col sm:flex-row justify-center gap-6">
         {/* YouTube primary CTA */}
-        <a
-          href="https://www.youtube.com/@AltPathAI"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={handleYouTubeClick}
           className="inline-flex items-center gap-2 rounded-md bg-emerald-600
                      px-8 py-4 text-white hover:bg-emerald-700 transition-colors
                      text-lg font-medium"
         >
           Subscribe on YouTube
-        </a>
+        </button>
       </div>
     </section>
   );

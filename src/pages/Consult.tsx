@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ChevronDown, Youtube } from 'lucide-react';
+import { openSecureUrl } from '@/utils/urlValidation';
 
 const Consult = () => {
   const [openFAQ, setOpenFAQ] = useState<string | null>(null);
@@ -12,7 +13,7 @@ const Consult = () => {
   };
 
   const handleYouTubeDIY = () => {
-    window.open('https://www.youtube.com/@AltPath', '_blank');
+    openSecureUrl('https://www.youtube.com/@AltPath');
   };
 
   const faqs = [

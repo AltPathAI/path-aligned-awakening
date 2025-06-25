@@ -4,10 +4,11 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Calendar, Users, Clock, CheckCircle } from 'lucide-react';
+import { openCalendlyUrl } from '@/utils/urlValidation';
 
 const Workshop = () => {
   const handleBookWorkshop = () => {
-    window.open('https://calendly.com/altpathai-vki1/30min', '_blank', 'width=800,height=600');
+    openCalendlyUrl('https://calendly.com/altpathai-vki1/30min');
   };
 
   return (

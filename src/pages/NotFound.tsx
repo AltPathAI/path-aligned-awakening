@@ -1,10 +1,11 @@
 
 import React from 'react';
 import { Youtube } from 'lucide-react';
+import { openSecureUrl } from '@/utils/urlValidation';
 
 const NotFound = () => {
   const handleYouTubeHub = () => {
-    window.open('https://www.youtube.com/@AltPath', '_blank');
+    openSecureUrl('https://www.youtube.com/@AltPath');
   };
 
   return (

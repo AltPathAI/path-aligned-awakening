@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { openCalendlyUrl } from '@/utils/urlValidation';
 
 interface AppointmentType {
   id: string;
@@ -47,8 +48,7 @@ const SchedulerEmbed = () => {
   ];
 
   const handleSchedule = (calendlyUrl: string) => {
-    // Open Calendly in a new window/tab
-    window.open(calendlyUrl, '_blank', 'width=800,height=600');
+    openCalendlyUrl(calendlyUrl);
   };
 
   return (

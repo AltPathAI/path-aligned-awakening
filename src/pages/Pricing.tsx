@@ -2,14 +2,15 @@
 import React from 'react';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
+import { openCalendlyUrl, openSecureUrl } from '@/utils/urlValidation';
 
 const Pricing = () => {
   const handleBookCall = () => {
-    window.open('https://calendly.com/altpathai-vki1/30min', '_blank', 'width=800,height=600');
+    openCalendlyUrl('https://calendly.com/altpathai-vki1/30min');
   };
 
   const handleYouTubeSubscribe = () => {
-    window.open('https://www.youtube.com/@altpathai', '_blank');
+    openSecureUrl('https://www.youtube.com/@altpathai');
   };
 
   return (

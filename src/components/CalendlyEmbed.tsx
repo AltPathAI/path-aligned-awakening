@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { openCalendlyUrl } from '@/utils/urlValidation';
 
 interface CalendlyEmbedProps {
   eventUrl: string;
@@ -9,7 +10,7 @@ interface CalendlyEmbedProps {
 
 const CalendlyEmbed: React.FC<CalendlyEmbedProps> = ({ eventUrl, className = '', children }) => {
   const handleClick = () => {
-    window.open(eventUrl, '_blank');
+    openCalendlyUrl(eventUrl);
   };
 
   return (
