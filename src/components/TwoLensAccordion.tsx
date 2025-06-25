@@ -1,14 +1,8 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { ChevronDown } from 'lucide-react';
 
 const TwoLensAccordion = () => {
-  const [openSection, setOpenSection] = useState<string | null>(null);
-
-  const toggleSection = (section: string) => {
-    setOpenSection(openSection === section ? null : section);
-  };
-
   const pragmaticItems = [
     "Problem-fit — Does it remove a real pain-point?",
     "Feasibility — Can people afford, build, or learn it?",
@@ -31,58 +25,40 @@ const TwoLensAccordion = () => {
         <div className="bg-white rounded-lg shadow-sm border border-neutral-200 overflow-hidden">
           {/* Pragmatic Lens */}
           <div className="border-b border-neutral-200">
-            <button
-              onClick={() => toggleSection('pragmatic')}
-              className="w-full py-6 px-8 text-left flex items-center justify-between hover:bg-neutral-50 transition-colors"
-            >
+            <div className="py-6 px-8 flex items-center justify-between">
               <span className="text-xl font-medium text-neutral-800">Pragmatic Lens – Does it work?</span>
-              <ChevronDown 
-                className={`w-5 h-5 text-neutral-600 transition-transform ${
-                  openSection === 'pragmatic' ? 'rotate-180' : ''
-                }`} 
-              />
-            </button>
+              <ChevronDown className="w-5 h-5 text-neutral-600 rotate-180" />
+            </div>
             
-            {openSection === 'pragmatic' && (
-              <div className="px-8 pb-6">
-                <div className="space-y-3">
-                  {pragmaticItems.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <span className="text-accent-600 mt-1">•</span>
-                      <span className="text-neutral-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
+            <div className="px-8 pb-6">
+              <div className="space-y-3">
+                {pragmaticItems.map((item, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <span className="text-accent-600 mt-1">•</span>
+                    <span className="text-neutral-700">{item}</span>
+                  </div>
+                ))}
               </div>
-            )}
+            </div>
           </div>
 
           {/* Elegant Lens */}
           <div>
-            <button
-              onClick={() => toggleSection('elegant')}
-              className="w-full py-6 px-8 text-left flex items-center justify-between hover:bg-neutral-50 transition-colors"
-            >
+            <div className="py-6 px-8 flex items-center justify-between">
               <span className="text-xl font-medium text-neutral-800">Elegant Lens – Does it delight?</span>
-              <ChevronDown 
-                className={`w-5 h-5 text-neutral-600 transition-transform ${
-                  openSection === 'elegant' ? 'rotate-180' : ''
-                }`} 
-              />
-            </button>
+              <ChevronDown className="w-5 h-5 text-neutral-600 rotate-180" />
+            </div>
             
-            {openSection === 'elegant' && (
-              <div className="px-8 pb-6">
-                <div className="space-y-3">
-                  {elegantItems.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <span className="text-accent-600 mt-1">•</span>
-                      <span className="text-neutral-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
+            <div className="px-8 pb-6">
+              <div className="space-y-3">
+                {elegantItems.map((item, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <span className="text-accent-600 mt-1">•</span>
+                    <span className="text-neutral-700">{item}</span>
+                  </div>
+                ))}
               </div>
-            )}
+            </div>
           </div>
         </div>
 
