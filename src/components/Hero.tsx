@@ -1,48 +1,64 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Youtube, Calendar } from 'lucide-react';
 
 const Hero = () => {
-  const handleExploreFramework = () => {
-    document.getElementById('two-lens-test')?.scrollIntoView({ behavior: 'smooth' });
+  const handleYouTubeSubscribe = () => {
+    window.open('https://www.youtube.com/@AltPath', '_blank');
+  };
+
+  const handleBookConsultation = () => {
+    window.location.href = '/consult';
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-neutral-50 to-accent-50 flex items-center justify-center relative overflow-hidden">
-      {/* Animated Background - Simple SVG Animation */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="w-full h-full flex items-center justify-center">
-          <div className="animate-pulse">
-            <svg width="300" height="200" viewBox="0 0 300 200" className="text-neutral-400">
-              {/* House → Bike → Garden morphing animation */}
-              <g className="animate-[morph_3s_ease-in-out_infinite]">
-                <rect x="120" y="100" width="60" height="50" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                <polygon points="120,100 150,70 180,100" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                <circle cx="150" cy="125" r="8" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.7" />
-              </g>
-            </svg>
-          </div>
+    <section className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden">
+      {/* SVG Animation - Wrench → Sprout → Chair */}
+      <div className="absolute inset-0 opacity-10 flex items-center justify-center">
+        <div className="animate-[morph_3s_ease-in-out_infinite] hover:animate-none">
+          <svg width="200" height="140" viewBox="0 0 200 140" className="text-neutral-300">
+            <g className="animate-[morph_3s_ease-in-out_infinite]">
+              {/* Wrench morphing to sprout to chair */}
+              <path 
+                d="M60,70 L140,70 M80,50 L120,50 M100,30 L100,110" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                fill="none"
+                className="opacity-60"
+              />
+              <circle cx="100" cy="70" r="15" stroke="currentColor" strokeWidth="2" fill="none" className="opacity-40" />
+            </g>
+          </svg>
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-        {/* Value Proposition */}
         <h1 className="text-5xl md:text-7xl font-serif font-light text-neutral-800 mb-8 tracking-tight leading-tight">
-          Live beautifully <em className="text-accent-600">because</em><br />
-          beauty helps life work.
+          Solve first. <em className="text-accent-600">Beautify second.</em>
         </h1>
         
         <p className="text-xl md:text-2xl text-neutral-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-          Every choice must clear two bars: Does it work? Does it delight?
+          Pragmatism proves value under stress; Aestheticism adds meaning through beauty and novelty.
         </p>
         
-        <div className="flex justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
-            onClick={handleExploreFramework}
+            onClick={handleYouTubeSubscribe}
             size="lg"
             className="bg-accent-600 hover:bg-accent-500 text-white px-8 py-4 text-lg font-medium transition-all duration-150 hover:shadow-lg rounded-lg"
           >
-            Explore the Framework
+            <Youtube className="w-5 h-5 mr-2" />
+            Subscribe on YouTube
+          </Button>
+          <Button
+            onClick={handleBookConsultation}
+            variant="outline"
+            size="lg"
+            className="border-accent-500 text-accent-600 hover:bg-accent-50 px-8 py-4 text-lg font-medium transition-all duration-150 hover:shadow-lg rounded-lg"
+          >
+            <Calendar className="w-5 h-5 mr-2" />
+            Book a Consultation
           </Button>
         </div>
       </div>

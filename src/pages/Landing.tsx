@@ -2,25 +2,19 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import WhatAndWhy from '@/components/WhatAndWhy';
-import TwoLensTest from '@/components/TwoLensTest';
-import EverydayBuckets from '@/components/EverydayBuckets';
-import ConvivialElegance from '@/components/ConvivialElegance';
-import NextSteps from '@/components/NextSteps';
-import About from '@/components/About';
+import OriginBlock from '@/components/OriginBlock';
+import TwoLensAccordion from '@/components/TwoLensAccordion';
+import BucketsGrid from '@/components/BucketsGrid';
 import Footer from '@/components/Footer';
 
 const Landing = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-neutral-50">
       <Navbar />
       <Hero />
-      <WhatAndWhy />
-      <TwoLensTest />
-      <EverydayBuckets />
-      <ConvivialElegance />
-      <NextSteps />
-      <About />
+      <OriginBlock />
+      <TwoLensAccordion />
+      <BucketsGrid />
       <Footer />
     </div>
   );

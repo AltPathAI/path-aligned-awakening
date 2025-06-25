@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import Landing from "./pages/Landing";
+import Consult from "./pages/Consult";
 import Framework from "./pages/Framework";
 import Workshop from "./pages/Workshop";
 import Pricing from "./pages/Pricing";
@@ -38,6 +39,8 @@ const App = () => {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Landing />} />
+              <Route path="/consult" element={<Consult />} />
+              <Route path="/framework" element={<Framework />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/success" element={<Success />} />
               <Route path="/cancel" element={<Cancel />} />

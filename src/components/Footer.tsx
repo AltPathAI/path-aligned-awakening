@@ -1,76 +1,55 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Calendar } from 'lucide-react';
+import { Youtube, Calendar } from 'lucide-react';
 
 const Footer = () => {
-  const handleBookCall = () => {
-    window.open('https://calendly.com/altpathai-vki1/30min', '_blank', 'width=800,height=600');
+  const handleYouTubeSubscribe = () => {
+    window.open('https://www.youtube.com/@AltPath', '_blank');
+  };
+
+  const handleBookConsultation = () => {
+    window.location.href = '/consult';
   };
 
   return (
-    <footer className="bg-slate-800 text-white">
-      {/* Main Footer Content */}
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          {/* Logo and Brand */}
-          <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 flex items-center justify-center bg-teal-600 rounded-lg">
-                <img 
-                  src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
-                  alt="AltPath.ai Logo" 
-                  className="w-10 h-10 object-contain brightness-0 invert"
-                />
-              </div>
-              <span className="text-xl font-bold text-white">AltPath.ai</span>
-            </div>
-            <p className="text-slate-300 text-sm">
-              Elegant Pragmatism for the thoughtful builder.
+    <footer className="bg-neutral-800 text-white relative overflow-hidden">
+      {/* Logo Watermark */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-5">
+        <img 
+          src="/lovable-uploads/ad2fe661-0e6d-4408-a579-797fa3d62c10.png" 
+          alt="AltPath.ai Logo Watermark" 
+          className="w-64 h-64 object-contain"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4 py-16">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          {/* Left: Creative Commons Notice */}
+          <div className="text-center md:text-left">
+            <p className="text-neutral-300 text-sm">
+              Copy-left notice: Reuse anything; cite AltPath.ai.
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Framework</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Workshop</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Journal</a></li>
-            </ul>
-          </div>
-
-          {/* Social */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Connect</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Mastodon</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">GitHub</a></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Start Your Journey</h3>
-            <p className="text-slate-300 mb-4">
-              Ready to apply Elegant Pragmatism to your next project?
-            </p>
+          {/* Right: CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4">
             <Button
-              onClick={handleBookCall}
-              className="bg-teal-600 hover:bg-teal-500 text-white"
+              onClick={handleYouTubeSubscribe}
+              variant="outline"
+              className="border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white"
+            >
+              <Youtube className="w-4 h-4 mr-2" />
+              Subscribe on YouTube
+            </Button>
+            <Button
+              onClick={handleBookConsultation}
+              className="bg-accent-600 hover:bg-accent-500 text-white"
             >
               <Calendar className="w-4 h-4 mr-2" />
-              Book Discovery Call
+              Book a Consultation
             </Button>
           </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="border-t border-slate-700 pt-8 text-center">
-          <p className="text-slate-400">
-            Copy-left notice: Reuse anything; cite AltPath.ai.
-          </p>
         </div>
       </div>
     </footer>
