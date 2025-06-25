@@ -14,7 +14,7 @@ const Landing = () => {
       <ScrollProgress />
       <Navbar />
       <Hero />
-      <div className="with-watermark mt-16 md:mt-24">
+      <div className="with-watermark mt-6 md:mt-10">
         <TwoLensAccordion />
       </div>
       <div className="mt-20 md:mt-32 with-watermark">
