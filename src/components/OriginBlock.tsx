@@ -14,7 +14,9 @@ const OriginBlock = () => {
               <strong>Aestheticism:</strong> beauty and novelty give life its deeper meaning.
             </p>
             <p className="text-neutral-700">
-              <strong>Elegant Pragmatism:</strong> solve first—then beautify.
+              <strong>Elegant Pragmatism:</strong> <br />
+              Solve problems first. <br />
+              Beautify answers second.
             </p>
           </div>
         </div>

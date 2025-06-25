@@ -29,7 +29,7 @@ const Framework = () => {
                 <h2 className="text-3xl font-serif text-neutral-800 mb-6">Core Principle</h2>
                 <p className="text-neutral-700 leading-relaxed">
                   Every solution must pass two tests: Does it work under real-world stress? Does it add beauty and meaning to life? 
-                  This dual-lens approach ensures we solve first, then beautify—creating solutions that are both pragmatically sound and aesthetically enriching.
+                  This dual-lens approach ensures we solve problems first, then beautify answers second—creating solutions that are both pragmatically sound and aesthetically enriching.
                 </p>
               </section>
 
