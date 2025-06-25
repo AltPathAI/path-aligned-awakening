@@ -28,9 +28,9 @@ const buckets: Bucket[] = [
     icon: <Heart className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Water, food, rest, care, mood",
     items: [
-      "We have safe drinking water.",
-      "We get enough restorative sleep.",
-      "We can obtain medical care when needed."
+      "I have safe drinking water.",
+      "I get enough restorative sleep.",
+      "I can obtain medical care when needed."
     ]
   },
   {
@@ -39,9 +39,9 @@ const buckets: Bucket[] = [
     icon: <Shield className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Freedom from hazards and harm",
     items: [
-      "Our surroundings are free from serious hazards.",
-      "We feel safe from interpersonal violence.",
-      "We feel safe from property crime."
+      "My surroundings are free from serious hazards.",
+      "I feel safe from interpersonal violence.",
+      "I feel safe from property crime."
     ]
   },
   {
@@ -50,8 +50,8 @@ const buckets: Bucket[] = [
     icon: <Home className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Secure, affordable shelter",
     items: [
-      "Our home is safe and weather-tight.",
-      "We can access green space for recreation."
+      "My home is safe and weather-tight.",
+      "I can access green space for recreation."
     ]
   },
   {
@@ -60,8 +60,8 @@ const buckets: Bucket[] = [
     icon: <Users className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Supportive relationships",
     items: [
-      "We have people we can rely on.",
-      "We regularly spend enjoyable time with friends or family."
+      "I have people I can rely on.",
+      "I regularly spend enjoyable time with friends or family."
     ]
   },
   {
@@ -70,8 +70,8 @@ const buckets: Bucket[] = [
     icon: <Clock className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Free time & control",
     items: [
-      "We have enough free time for hobbies.",
-      "We can influence our work or study hours."
+      "I have enough free time for hobbies.",
+      "I can influence my work or study hours."
     ]
   },
   {
@@ -80,8 +80,8 @@ const buckets: Bucket[] = [
     icon: <DollarSign className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Expenses & emergency buffer",
     items: [
-      "We can meet routine living costs.",
-      "We could handle a €1 000 emergency expense."
+      "I can meet routine living costs.",
+      "I could handle a €1 000 emergency expense."
     ]
   },
   {
@@ -90,8 +90,8 @@ const buckets: Bucket[] = [
     icon: <BookOpen className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Learning & digital access",
     items: [
-      "We can access ongoing learning resources.",
-      "We have reliable internet and devices."
+      "I can access ongoing learning resources.",
+      "I have reliable internet and devices."
     ]
   },
   {
@@ -100,8 +100,8 @@ const buckets: Bucket[] = [
     icon: <Briefcase className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Contribution & respect",
     items: [
-      "We have opportunities to contribute productively.",
-      "We feel our work is meaningful."
+      "I have opportunities to contribute productively.",
+      "I feel my work is meaningful."
     ]
   },
   {
@@ -110,8 +110,8 @@ const buckets: Bucket[] = [
     icon: <Vote className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Voice & trust",
     items: [
-      "We feel our voice is heard in decisions.",
-      "We trust public institutions to act fairly."
+      "I feel my voice is heard in decisions.",
+      "I trust public institutions to act fairly."
     ]
   },
   {
@@ -120,8 +120,8 @@ const buckets: Bucket[] = [
     icon: <Target className="h-8 w-8 stroke-neutral-600" />,
     blurb: "Overall life satisfaction",
     items: [
-      "We feel life is worthwhile.",
-      "We are satisfied with our overall quality of life."
+      "I feel life is worthwhile.",
+      "I am satisfied with my overall quality of life."
     ]
   }
 ];
