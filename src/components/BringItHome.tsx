@@ -63,7 +63,7 @@ const BringItHome = () => {
             alt="AltPath.ai Logo" 
             className="h-5 w-5"
           />
-          Book a Path-Mapping Call
+          Intrigued? Book a meet 'n greet
         </a>
       </div>
     </section>

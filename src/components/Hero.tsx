@@ -60,7 +60,7 @@ const Hero = () => {
         
         <p className="text-xl md:text-2xl text-neutral-600 mb-16 max-w-3xl mx-auto font-light leading-relaxed">
           <span className="block mb-3">Pragmatism delivers working solutions;</span>
-          <span className="block">Aesthetics refines them into everlasting elegance.</span>
+          <span className="block">Aesthetics refines them into personal joy.</span>
         </p>
         
         <div className="flex justify-center">
