@@ -14,7 +14,7 @@ const BringItHome = () => {
         <div className="mb-12">
           <div className="inline-block border-2 border-accent-600 rounded-2xl p-6 mb-8">
             <img 
-              src="/lovable-uploads/b3d627f5-06f2-4d97-bf68-8e1eb3889a3d.png" 
+              src="/lovable-uploads/f663f7b1-6e98-4f15-81ae-5083ddaa4780.png" 
               alt="AltPath.ai Logo" 
               className="h-16 w-16"
             />

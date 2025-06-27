@@ -19,11 +19,11 @@ const Hero = () => {
   return (
     <section id="hero" className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden px-4">
       <div className="max-w-sm mx-auto text-center relative z-10">
-        {/* Logo with border - larger to match screenshot */}
+        {/* Logo with border - matching screenshot exactly */}
         <div className="mb-12 animate-fade-in">
           <div className="inline-block border-2 border-accent-600 rounded-2xl p-6 mb-8">
             <img 
-              src="/lovable-uploads/b3d627f5-06f2-4d97-bf68-8e1eb3889a3d.png" 
+              src="/lovable-uploads/f663f7b1-6e98-4f15-81ae-5083ddaa4780.png" 
               alt="AltPath.ai Logo" 
               className="h-20 w-20"
             />
