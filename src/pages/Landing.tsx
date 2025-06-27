@@ -21,8 +21,7 @@ const Landing = () => {
       <div className="with-watermark mt-6 md:mt-10">
         <TwoLensAccordion />
       </div>
-      <StatsSection />
-      <div className="mt-20 md:mt-32 with-watermark">
+      <div className="with-watermark mt-16 md:mt-24">
         <QualityBuckets />
       </div>
       <div className="mt-20 md:mt-32">
