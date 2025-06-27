@@ -173,4 +173,5 @@
   
   .hover\:bg-accent-500:hover { background-color: var(--accent-500); }
   .hover\:bg-accent-600:hover { background-color: var(--accent-600); }
+  .hover\:bg-green-700:hover { background-color: #047857; }
 }

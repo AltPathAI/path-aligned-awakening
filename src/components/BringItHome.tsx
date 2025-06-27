@@ -47,7 +47,7 @@ const BringItHome = () => {
         <div className="flex flex-col gap-4 mb-12">
           <button
             onClick={handleYouTubeClick}
-            className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 text-lg font-medium rounded-xl transition-all hover:shadow-lg hover:scale-105 group w-full flex items-center justify-center gap-3"
+            className="bg-brand-green hover:bg-green-700 text-white px-8 py-4 text-lg font-medium rounded-xl transition-all hover:shadow-lg hover:scale-105 group w-full flex items-center justify-center gap-3"
           >
             <Youtube className="w-5 h-5" />
             Subscribe on YouTube
@@ -55,7 +55,7 @@ const BringItHome = () => {
           
           <button
             onClick={() => window.open('https://calendly.com/altpathai', '_blank')}
-            className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 text-lg font-medium rounded-xl transition-all hover:shadow-lg hover:scale-105 group w-full flex items-center justify-center gap-3"
+            className="bg-brand-green hover:bg-green-700 text-white px-8 py-4 text-lg font-medium rounded-xl transition-all hover:shadow-lg hover:scale-105 group w-full flex items-center justify-center gap-3"
           >
             <Calendar className="w-5 h-5" />
             Schedule Meet & Greet →
@@ -72,7 +72,7 @@ const BringItHome = () => {
         <div className="fixed bottom-4 left-4 right-4 z-50">
           <button
             onClick={() => window.open('https://calendly.com/altpathai', '_blank')}
-            className="w-full bg-accent-600 hover:bg-accent-700 text-white px-6 py-4 rounded-xl font-medium transition-all hover:shadow-lg flex items-center justify-center gap-2 text-lg"
+            className="w-full bg-brand-green hover:bg-green-700 text-white px-6 py-4 rounded-xl font-medium transition-all hover:shadow-lg flex items-center justify-center gap-2 text-lg"
           >
             <Calendar className="w-5 h-5" />
             Schedule Meet & Greet →

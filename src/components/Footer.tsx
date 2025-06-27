@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="fixed bottom-4 left-4 right-4 z-50">
           <button
             onClick={() => window.open('https://calendly.com/altpathai', '_blank')}
-            className="w-full bg-accent-600 hover:bg-accent-700 text-white px-6 py-4 rounded-xl font-medium transition-all hover:shadow-lg flex items-center justify-center gap-2 text-lg"
+            className="w-full bg-brand-green hover:bg-green-700 text-white px-6 py-4 rounded-xl font-medium transition-all hover:shadow-lg flex items-center justify-center gap-2 text-lg"
           >
             <Calendar className="w-5 h-5" />
             Schedule Meet & Greet →
