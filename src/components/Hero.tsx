@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden with-watermark">
+    <section id="hero" className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden px-4">
       {/* Enhanced SVG Animation */}
       <div className="absolute inset-0 opacity-10 flex items-center justify-center">
         <div className="relative w-24 h-24">
@@ -57,42 +57,42 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
+      <div className="max-w-lg mx-auto text-center relative z-10">
         {/* Logo */}
-        <div className="mb-12 animate-fade-in">
+        <div className="mb-8 animate-fade-in">
           <img 
             src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
             alt="AltPath.ai Logo" 
-            className="mx-auto h-32 w-32 hover:scale-105 transition-transform duration-300"
+            className="mx-auto h-24 w-24 hover:scale-105 transition-transform duration-300"
           />
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-serif font-light text-neutral-800 mb-10 tracking-tight leading-tight animate-fade-in">
-          <span className="block">Solve problems first.</span>
-          <span className="block"><em className="text-accent-600 bg-gradient-to-r from-accent-600 to-accent-500 bg-clip-text text-transparent">Beautify answers second.</em></span>
+        <h1 className="text-3xl md:text-4xl font-serif font-normal text-neutral-800 mb-6 tracking-tight leading-tight animate-fade-in">
+          <span className="block mb-2">Solve problems first.</span>
+          <span className="block"><em className="text-accent-600 font-normal">Beautify answers second.</em></span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-neutral-600 mb-16 max-w-4xl mx-auto font-light leading-relaxed animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <span className="block mb-4">Pragmatism delivers working solutions;</span>
+        <p className="text-base md:text-lg text-neutral-600 mb-12 font-light leading-relaxed animate-fade-in px-2" style={{ animationDelay: '0.3s' }}>
+          <span className="block mb-2">Pragmatism delivers working solutions;</span>
           <span className="block">Aesthetics refines them into personal joy.</span>
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col gap-4 justify-center items-center mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <div className="flex flex-col gap-3 justify-center items-center mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <Button
             onClick={handleYouTubeClick}
             size="lg"
-            className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 text-lg font-medium rounded-lg transition-all hover:shadow-lg hover:scale-105 group w-full max-w-sm"
+            className="bg-accent-600 hover:bg-accent-700 text-white px-6 py-3 text-base font-medium rounded-lg transition-all hover:shadow-lg hover:scale-105 group w-full max-w-xs"
           >
-            <Youtube className="w-5 h-5 mr-2" />
+            <Youtube className="w-4 h-4 mr-2" />
             Subscribe on YouTube
           </Button>
           <Button
             onClick={() => window.open('https://calendly.com/altpathai', '_blank')}
             size="lg"
-            className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 text-lg font-medium rounded-lg transition-all hover:shadow-lg hover:scale-105 group w-full max-w-sm"
+            className="bg-accent-600 hover:bg-accent-700 text-white px-6 py-3 text-base font-medium rounded-lg transition-all hover:shadow-lg hover:scale-105 group w-full max-w-xs"
           >
-            <Calendar className="w-5 h-5 mr-2" />
+            <Calendar className="w-4 h-4 mr-2" />
             Schedule Meet & Greet →
           </Button>
         </div>
@@ -102,7 +102,7 @@ const Hero = () => {
           className="animate-bounce text-accent-600 hover:text-accent-500 transition-colors p-2 rounded-full hover:bg-accent-50"
           aria-label="Scroll to next section"
         >
-          <ArrowDown size={24} />
+          <ArrowDown size={20} />
         </button>
       </div>
 
