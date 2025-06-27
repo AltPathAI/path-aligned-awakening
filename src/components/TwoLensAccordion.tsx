@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Calendar } from 'lucide-react';
 
 const TwoLensAccordion = () => {
   const pragmaticItems = [
