@@ -5,7 +5,7 @@ import { Calendar } from 'lucide-react';
 const TwoLensAccordion = () => {
   const pragmaticItems = [
     { title: "Problem-fit", description: "Does it remove a real pain-point?" },
-    { title: "Feasibility", description: "Can people afford, build, or learn it?" },
+    { title: "Feasibility", description: "Can people afford, build, or learn it?" },  
     { title: "Efficiency", description: "Does it maximise benefit per unit time / energy / cost?" },
     { title: "Resilience", description: "Will it still work when resources shrink?" },
     { title: "Reproducibility", description: "Could peers copy it with a weekend's guidance?" }
@@ -26,7 +26,7 @@ const TwoLensAccordion = () => {
         <div className="text-center mb-10">
           <div className="inline-block border-2 border-accent-600 rounded-2xl p-5 mb-6">
             <img 
-              src="/lovable-uploads/797c40f5-1a3e-46b6-b3e0-dd7aaac51bb0.png" 
+              src="/lovable-uploads/76fb8ca3-504f-4a90-900d-beede196f893.png" 
               alt="AltPath.ai Logo" 
               className="h-12 w-12"
             />
