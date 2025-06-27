@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Wrench, Sprout, ArrowDown } from 'lucide-react';
+import { Wrench, Sprout, ArrowDown, Play } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -67,18 +67,32 @@ const Hero = () => {
           <Button
             onClick={() => scrollToSection('two-lens')}
             size="lg"
-            className="bg-accent-600 hover:bg-accent-500 text-white px-8 py-4 text-lg font-medium rounded-md transition-all hover:shadow-lg hover:scale-105"
+            className="bg-accent-600 hover:bg-accent-500 text-white px-8 py-4 text-lg font-medium rounded-md transition-all hover:shadow-lg hover:scale-105 group"
           >
+            <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
             Explore the Philosophy
           </Button>
           <Button
             onClick={() => scrollToSection('bring-it-home')}
             variant="outline"
             size="lg"
-            className="border-accent-600 text-accent-600 hover:bg-accent-50 px-8 py-4 text-lg font-medium rounded-md transition-all hover:shadow-lg"
+            className="border-accent-600 text-accent-600 hover:bg-accent-50 px-8 py-4 text-lg font-medium rounded-md transition-all hover:shadow-lg hover:border-accent-500"
           >
             See the Vision
           </Button>
+        </div>
+
+        {/* Enhanced CTA area */}
+        <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 mb-12 border border-accent-200 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.9s' }}>
+          <p className="text-neutral-700 text-lg mb-4">
+            <strong>Join the movement:</strong> Where practical solutions meet beautiful experiences
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 text-sm text-neutral-600">
+            <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full">Problem-solving</span>
+            <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full">Aesthetic design</span>
+            <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full">Personal paths</span>
+            <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full">AI-guided</span>
+          </div>
         </div>
 
         <button

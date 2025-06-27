@@ -2,6 +2,7 @@
 import React from 'react';
 import { openSecureUrl } from '@/utils/urlValidation';
 import { Youtube, ArrowRight } from 'lucide-react';
+import NewsletterSignup from './NewsletterSignup';
 
 const BringItHome = () => {
   const handleYouTubeClick = () => {
@@ -42,13 +43,18 @@ const BringItHome = () => {
             But beauty is in the eye of the beholder. And what is 'essential' to one may not be to another. <em>It's never one size fits all.</em>
           </p>
           
-          <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed">
+          <p className="text-xl md:text-2xl text-neutral-700 leading-relaxed mb-12">
             Everyone is on an <strong className="text-accent-600">AltPath (Alternative Path)</strong>. And so, our adaptive AI <strong className="text-accent-600">(AltPath.ai)</strong> helps you find your values, your essentials, and your optimal AltPath as defined by where you find beauty in the World.
           </p>
         </div>
 
+        {/* Newsletter Signup */}
+        <div className="mb-12">
+          <NewsletterSignup />
+        </div>
+
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-accent-200">
-          <h3 className="text-2xl font-serif text-neutral-800 mb-6">Ready to discover your AltPath?</h3>
+          <h3 className="text-2xl font-serif text-neutral-800 mb-6">Connect with our community</h3>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <button
               onClick={handleYouTubeClick}
