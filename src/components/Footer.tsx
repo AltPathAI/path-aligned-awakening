@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Logo Watermark */}
       <div className="absolute inset-0 flex items-center justify-center opacity-5">
         <img 
-          src="/lovable-uploads/f663f7b1-6e98-4f15-81ae-5083ddaa4780.png" 
+          src="/lovable-uploads/797c40f5-1a3e-46b6-b3e0-dd7aaac51bb0.png" 
           alt="AltPath.ai Logo Watermark" 
           className="w-32 h-32 object-contain"
         />

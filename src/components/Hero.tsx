@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="mb-12 animate-fade-in">
           <div className="inline-block border-2 border-accent-600 rounded-2xl p-6 mb-8">
             <img 
-              src="/lovable-uploads/f663f7b1-6e98-4f15-81ae-5083ddaa4780.png" 
+              src="/lovable-uploads/797c40f5-1a3e-46b6-b3e0-dd7aaac51bb0.png" 
               alt="AltPath.ai Logo" 
               className="h-20 w-20"
             />
