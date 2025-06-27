@@ -21,7 +21,7 @@ const TwoLensAccordion = () => {
 
   return (
     <section id="two-lens" className="py-16 bg-neutral-50 px-4">
-      <div className="max-w-sm mx-auto">
+      <div className="max-w-4xl mx-auto">
         {/* Logo at top - matching screenshot */}
         <div className="text-center mb-10">
           <div className="inline-block border-2 border-accent-600 rounded-2xl p-5 mb-6">
@@ -40,7 +40,7 @@ const TwoLensAccordion = () => {
           </p>
         </div>
 
-        <div className="space-y-4 mb-10">
+        <div className="grid md:grid-cols-2 gap-6 mb-10">
           {/* Pragmatic Lens */}
           <div className="bg-green-50 rounded-2xl p-5 border border-green-200">
             <h3 className="text-xl font-semibold text-neutral-800 mb-1">
