@@ -23,38 +23,38 @@ const TwoLensAccordion = () => {
     <section id="two-lens" className="py-16 bg-neutral-50 px-4">
       <div className="max-w-sm mx-auto">
         {/* Logo at top - matching screenshot */}
-        <div className="text-center mb-12">
-          <div className="inline-block border-2 border-accent-600 rounded-2xl p-6 mb-8">
+        <div className="text-center mb-10">
+          <div className="inline-block border-2 border-accent-600 rounded-2xl p-5 mb-6">
             <img 
               src="/lovable-uploads/797c40f5-1a3e-46b6-b3e0-dd7aaac51bb0.png" 
               alt="AltPath.ai Logo" 
-              className="h-16 w-16"
+              className="h-12 w-12"
             />
-            <div className="text-accent-600 font-medium mt-3 text-sm">AltPathAI</div>
+            <div className="text-accent-600 font-medium mt-2 text-sm">AltPathAI</div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-serif text-neutral-800 mb-4 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-serif text-neutral-800 mb-3 leading-tight">
             Elegant Pragmatism
           </h2>
-          <p className="text-lg text-neutral-600 leading-relaxed mb-8">
+          <p className="text-base text-neutral-600 leading-relaxed mb-6">
             Does it work? Does it delight?
           </p>
         </div>
 
-        <div className="space-y-6 mb-12">
+        <div className="space-y-4 mb-10">
           {/* Pragmatic Lens */}
-          <div className="bg-green-50 rounded-2xl p-6 border border-green-200">
-            <h3 className="text-2xl font-semibold text-neutral-800 mb-2">
+          <div className="bg-green-50 rounded-2xl p-5 border border-green-200">
+            <h3 className="text-xl font-semibold text-neutral-800 mb-1">
               Pragmatic Lens
             </h3>
-            <p className="text-neutral-600 mb-6 text-base">Does it work?</p>
+            <p className="text-neutral-600 mb-4 text-sm">Does it work?</p>
             
-            <div className="space-y-4">
+            <div className="space-y-3">
               {pragmaticItems.map((item, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-accent-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
+                <div key={index} className="flex items-start space-x-2">
+                  <div className="w-1.5 h-1.5 bg-accent-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="text-sm">
                     <span className="font-medium text-neutral-800">{item.title}</span>
-                    <span className="text-neutral-700 ml-2">— {item.description}</span>
+                    <span className="text-neutral-700 ml-1">— {item.description}</span>
                   </div>
                 </div>
               ))}
@@ -62,19 +62,19 @@ const TwoLensAccordion = () => {
           </div>
 
           {/* Elegant Lens */}
-          <div className="bg-blue-50 rounded-2xl p-6 border border-blue-200">
-            <h3 className="text-2xl font-semibold text-accent-600 mb-2">
+          <div className="bg-blue-50 rounded-2xl p-5 border border-blue-200">
+            <h3 className="text-xl font-semibold text-accent-600 mb-1">
               Elegant Lens
             </h3>
-            <p className="text-neutral-600 mb-6 text-base">Does it delight?</p>
+            <p className="text-neutral-600 mb-4 text-sm">Does it delight?</p>
             
-            <div className="space-y-4">
+            <div className="space-y-3">
               {elegantItems.map((item, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-accent-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <div>
+                <div key={index} className="flex items-start space-x-2">
+                  <div className="w-1.5 h-1.5 bg-accent-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="text-sm">
                     <span className="font-medium text-neutral-800">{item.title}</span>
-                    <span className="text-neutral-700 ml-2">— {item.description}</span>
+                    <span className="text-neutral-700 ml-1">— {item.description}</span>
                   </div>
                 </div>
               ))}
@@ -84,7 +84,7 @@ const TwoLensAccordion = () => {
 
         {/* Bottom text */}
         <div className="text-center mb-16">
-          <p className="text-neutral-600 italic text-base leading-relaxed max-w-sm mx-auto">
+          <p className="text-neutral-600 italic text-sm leading-relaxed max-w-sm mx-auto">
             A proposal must say "yes" to most items in <strong>both</strong> lists—or we refine until it can.
           </p>
         </div>

@@ -33,26 +33,26 @@ const BucketCard: React.FC<BucketCardProps> = ({
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
     >
-      <div className={`rounded-2xl border ${borderColor} ${bgColor} p-6 h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1`}>
-        <div className="flex items-start gap-4 mb-4">
+      <div className={`rounded-2xl border ${borderColor} ${bgColor} p-4 h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1`}>
+        <div className="flex items-start gap-3 mb-3">
           <div className={`transition-colors duration-300 ${
             isHovered ? color : 'text-neutral-600'
           } flex-shrink-0`}>
-            <Icon className="h-8 w-8" />
+            <Icon className="h-6 w-6" />
           </div>
           <div className="flex-1">
-            <h3 className="font-semibold text-lg text-neutral-800 mb-1 group-hover:text-accent-600 transition-colors leading-tight">
+            <h3 className="font-semibold text-base text-neutral-800 mb-1 group-hover:text-accent-600 transition-colors leading-tight">
               {title}
             </h3>
-            <p className="text-sm text-neutral-600 font-medium mb-4">{blurb}</p>
+            <p className="text-xs text-neutral-600 font-medium mb-3">{blurb}</p>
             
             <div className={`transition-all duration-300 ${
               isHovered ? 'opacity-100' : 'opacity-80'
             }`}>
-              <ul className="text-left list-none space-y-2">
+              <ul className="text-left list-none space-y-1">
                 {items.map((line, index) => (
-                  <li key={line} className="text-sm text-neutral-700 flex items-start gap-2">
-                    <div className="w-1.5 h-1.5 bg-accent-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <li key={line} className="text-xs text-neutral-700 flex items-start gap-2">
+                    <div className="w-1 h-1 bg-accent-600 rounded-full mt-1.5 flex-shrink-0"></div>
                     <span className="leading-relaxed">{line}</span>
                   </li>
                 ))}
