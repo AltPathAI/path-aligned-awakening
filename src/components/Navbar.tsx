@@ -14,7 +14,7 @@ const Navbar = () => {
           {/* Logo lock-up */}
           <a href="/#hero" className="flex items-center gap-2 text-base font-medium text-neutral-800 hover:opacity-80 transition-opacity">
             <img 
-              src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
+              src="/lovable-uploads/b3d627f5-06f2-4d97-bf68-8e1eb3889a3d.png" 
               alt="AltPath.ai Logo" 
               className="h-6 w-6"
             />

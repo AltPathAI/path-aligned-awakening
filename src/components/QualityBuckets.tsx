@@ -169,7 +169,7 @@ const QualityBuckets = () => {
         {/* Logo and title */}
         <div className="mb-12 text-center">
           <img 
-            src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
+            src="/lovable-uploads/b3d627f5-06f2-4d97-bf68-8e1eb3889a3d.png" 
             alt="AltPath.ai Logo" 
             className="mx-auto h-16 w-16 mb-6"
           />
