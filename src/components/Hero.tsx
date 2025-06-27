@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Wrench, Sprout, ArrowDown, Play } from 'lucide-react';
+import { Wrench, Sprout, ArrowDown, Play, Calendar, Youtube } from 'lucide-react';
+import { openSecureUrl } from '@/utils/urlValidation';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -9,6 +10,10 @@ const Hero = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleYouTubeClick = () => {
+    openSecureUrl('https://www.youtube.com/@AltPathAI');
   };
 
   return (
@@ -53,6 +58,15 @@ const Hero = () => {
       </div>
 
       <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
+        {/* Logo */}
+        <div className="mb-12 animate-fade-in">
+          <img 
+            src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
+            alt="AltPath.ai Logo" 
+            className="mx-auto h-32 w-32 hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
         <h1 className="text-5xl md:text-7xl font-serif font-light text-neutral-800 mb-10 tracking-tight leading-tight animate-fade-in">
           <span className="block">Solve problems first.</span>
           <span className="block"><em className="text-accent-600 bg-gradient-to-r from-accent-600 to-accent-500 bg-clip-text text-transparent">Beautify answers second.</em></span>
@@ -63,36 +77,24 @@ const Hero = () => {
           <span className="block">Aesthetics refines them into personal joy.</span>
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        {/* Action Buttons */}
+        <div className="flex flex-col gap-4 justify-center items-center mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <Button
-            onClick={() => scrollToSection('two-lens')}
+            onClick={handleYouTubeClick}
             size="lg"
-            className="bg-accent-600 hover:bg-accent-500 text-white px-8 py-4 text-lg font-medium rounded-md transition-all hover:shadow-lg hover:scale-105 group"
+            className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 text-lg font-medium rounded-lg transition-all hover:shadow-lg hover:scale-105 group w-full max-w-sm"
           >
-            <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-            Explore the Philosophy
+            <Youtube className="w-5 h-5 mr-2" />
+            Subscribe on YouTube
           </Button>
           <Button
-            onClick={() => scrollToSection('bring-it-home')}
-            variant="outline"
+            onClick={() => window.open('https://calendly.com/altpathai', '_blank')}
             size="lg"
-            className="border-accent-600 text-accent-600 hover:bg-accent-50 px-8 py-4 text-lg font-medium rounded-md transition-all hover:shadow-lg hover:border-accent-500"
+            className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 text-lg font-medium rounded-lg transition-all hover:shadow-lg hover:scale-105 group w-full max-w-sm"
           >
-            See the Vision
+            <Calendar className="w-5 h-5 mr-2" />
+            Schedule Meet & Greet →
           </Button>
-        </div>
-
-        {/* Enhanced CTA area */}
-        <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 mb-12 border border-accent-200 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.9s' }}>
-          <p className="text-neutral-700 text-lg mb-4">
-            <strong>Join the movement:</strong> Where practical solutions meet beautiful experiences
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 text-sm text-neutral-600">
-            <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full">Problem-solving</span>
-            <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full">Aesthetic design</span>
-            <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full">Personal paths</span>
-            <span className="bg-accent-100 text-accent-700 px-3 py-1 rounded-full">AI-guided</span>
-          </div>
         </div>
 
         <button

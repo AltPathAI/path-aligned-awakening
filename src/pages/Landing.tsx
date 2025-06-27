@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import TwoLensAccordion from '@/components/TwoLensAccordion';
 import QualityBuckets from '@/components/QualityBuckets';
 import StatsSection from '@/components/StatsSection';
+import CustomGPTs from '@/components/CustomGPTs';
 import BringItHome from '@/components/BringItHome';
 import Footer from '@/components/Footer';
 import ScrollProgress from '@/components/ScrollProgress';
@@ -23,6 +24,9 @@ const Landing = () => {
       <StatsSection />
       <div className="mt-20 md:mt-32 with-watermark">
         <QualityBuckets />
+      </div>
+      <div className="mt-20 md:mt-32">
+        <CustomGPTs />
       </div>
       <div className="with-watermark mt-16 md:mt-24">
         <BringItHome />
