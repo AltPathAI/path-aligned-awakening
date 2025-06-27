@@ -21,28 +21,28 @@ const TwoLensAccordion = () => {
 
   return (
     <section id="two-lens" className="py-16 bg-neutral-50 px-4">
-      <div className="max-w-lg mx-auto">
-        {/* Logo at top */}
+      <div className="max-w-sm mx-auto">
+        {/* Logo at top - matching screenshot */}
         <div className="text-center mb-12">
-          <div className="inline-block border-2 border-accent-600 rounded-xl p-4 mb-6">
+          <div className="inline-block border-2 border-accent-600 rounded-2xl p-6 mb-8">
             <img 
               src="/lovable-uploads/b3d627f5-06f2-4d97-bf68-8e1eb3889a3d.png" 
               alt="AltPath.ai Logo" 
-              className="h-12 w-12"
+              className="h-16 w-16"
             />
-            <div className="text-accent-600 font-medium mt-2 text-xs">AltPathAI</div>
+            <div className="text-accent-600 font-medium mt-3 text-sm">AltPathAI</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-serif text-neutral-800 mb-4 leading-tight">
             Elegant Pragmatism
           </h2>
-          <p className="text-lg text-neutral-600 leading-relaxed">
+          <p className="text-lg text-neutral-600 leading-relaxed mb-8">
             Does it work? Does it delight?
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-6 mb-12">
           {/* Pragmatic Lens */}
-          <div className="bg-green-100 rounded-2xl p-6 border border-green-200">
+          <div className="bg-green-50 rounded-2xl p-6 border border-green-200">
             <h3 className="text-2xl font-semibold text-neutral-800 mb-2">
               Pragmatic Lens
             </h3>
@@ -83,7 +83,7 @@ const TwoLensAccordion = () => {
         </div>
 
         {/* Bottom text */}
-        <div className="text-center mt-8">
+        <div className="text-center mb-16">
           <p className="text-neutral-600 italic text-base leading-relaxed max-w-sm mx-auto">
             A proposal must say "yes" to most items in <strong>both</strong> lists—or we refine until it can.
           </p>

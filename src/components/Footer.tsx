@@ -4,7 +4,7 @@ import { Youtube, Calendar } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-800 text-white relative overflow-hidden px-4 py-16 pb-24">
+    <footer className="bg-neutral-800 text-white relative overflow-hidden px-4 py-16 pb-32">
       {/* Logo Watermark */}
       <div className="absolute inset-0 flex items-center justify-center opacity-5">
         <img 
@@ -14,7 +14,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-lg mx-auto text-center">
+      <div className="relative z-10 max-w-sm mx-auto text-center">
         <div className="mb-12">
           <h3 className="text-2xl font-medium text-white mb-3">AltPath.ai</h3>
           <p className="text-neutral-300 text-base">Elegant Pragmatism for Life Design</p>

@@ -18,55 +18,16 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen bg-neutral-50 flex items-center justify-center relative overflow-hidden px-4">
-      {/* Enhanced SVG Animation */}
-      <div className="absolute inset-0 opacity-10 flex items-center justify-center">
-        <div className="relative w-24 h-24">
-          <Wrench 
-            size={96} 
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-accent-600" 
-            style={{
-              animation: 'fadeInOut 4s infinite',
-              animationDelay: '0s'
-            }}
-          />
-          <Sprout 
-            size={96} 
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-accent-600" 
-            style={{
-              animation: 'fadeInOut 4s infinite',
-              animationDelay: '1.3s'
-            }}
-          />
-          <svg 
-            width="96" 
-            height="96" 
-            viewBox="0 0 24 24" 
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-accent-600"
-            style={{
-              animation: 'fadeInOut 4s infinite',
-              animationDelay: '2.6s'
-            }}
-          >
-            <path 
-              d="M7 11V7a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4m-3 0V7M7 11v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8M7 11h10" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              fill="none"
-            />
-          </svg>
-        </div>
-      </div>
-
-      <div className="max-w-lg mx-auto text-center relative z-10">
-        {/* Logo with border like in screenshot */}
-        <div className="mb-8 animate-fade-in">
-          <div className="inline-block border-2 border-accent-600 rounded-xl p-4 mb-6">
+      <div className="max-w-sm mx-auto text-center relative z-10">
+        {/* Logo with border - larger to match screenshot */}
+        <div className="mb-12 animate-fade-in">
+          <div className="inline-block border-2 border-accent-600 rounded-2xl p-6 mb-8">
             <img 
               src="/lovable-uploads/b3d627f5-06f2-4d97-bf68-8e1eb3889a3d.png" 
               alt="AltPath.ai Logo" 
-              className="h-16 w-16"
+              className="h-20 w-20"
             />
-            <div className="text-accent-600 font-medium mt-2 text-sm">AltPathAI</div>
+            <div className="text-accent-600 font-medium mt-3 text-sm">AltPathAI</div>
           </div>
         </div>
 
@@ -75,13 +36,13 @@ const Hero = () => {
           <span className="block"><em className="text-accent-600 font-normal">Beautify answers second.</em></span>
         </h1>
         
-        <p className="text-lg text-neutral-600 mb-12 font-light leading-relaxed animate-fade-in px-2" style={{ animationDelay: '0.3s' }}>
+        <p className="text-lg text-neutral-600 mb-16 font-light leading-relaxed animate-fade-in px-2" style={{ animationDelay: '0.3s' }}>
           <span className="block mb-2">Pragmatism delivers working solutions;</span>
           <span className="block">Aesthetics refines them into personal joy.</span>
         </p>
 
-        {/* Action Buttons - using brand green color */}
-        <div className="flex flex-col gap-4 justify-center items-center mb-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        {/* Action Buttons - matching screenshot spacing */}
+        <div className="flex flex-col gap-4 justify-center items-center mb-20 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <button
             onClick={handleYouTubeClick}
             className="bg-brand-green hover:bg-green-700 text-white px-8 py-4 text-lg font-medium rounded-xl transition-all hover:shadow-lg hover:scale-105 group w-full max-w-sm flex items-center justify-center gap-3"
@@ -117,14 +78,6 @@ const Hero = () => {
           <ArrowDown size={20} />
         </button>
       </div>
-
-      <style>{`
-        @keyframes fadeInOut {
-          0%, 25% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-          25.01%, 75% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
-          75.01%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
-        }
-      `}</style>
     </section>
   );
 };

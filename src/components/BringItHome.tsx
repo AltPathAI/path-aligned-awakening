@@ -10,15 +10,15 @@ const BringItHome = () => {
 
   return (
     <section id="bring-it-home" className="text-center px-4 py-16 bg-neutral-50 relative overflow-hidden">
-      <div className="relative z-10 max-w-lg mx-auto">
+      <div className="relative z-10 max-w-sm mx-auto">
         <div className="mb-12">
-          <div className="inline-block border-2 border-accent-600 rounded-xl p-4 mb-8">
+          <div className="inline-block border-2 border-accent-600 rounded-2xl p-6 mb-8">
             <img 
               src="/lovable-uploads/b3d627f5-06f2-4d97-bf68-8e1eb3889a3d.png" 
               alt="AltPath.ai Logo" 
-              className="h-12 w-12"
+              className="h-16 w-16"
             />
-            <div className="text-accent-600 font-medium mt-2 text-xs">AltPathAI</div>
+            <div className="text-accent-600 font-medium mt-3 text-sm">AltPathAI</div>
           </div>
 
           <h2 className="font-serif text-4xl md:text-5xl mb-8 text-neutral-800 leading-tight">
@@ -44,7 +44,7 @@ const BringItHome = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 mb-12">
+        <div className="flex flex-col gap-4 mb-16">
           <button
             onClick={handleYouTubeClick}
             className="bg-brand-green hover:bg-green-700 text-white px-8 py-4 text-lg font-medium rounded-xl transition-all hover:shadow-lg hover:scale-105 group w-full flex items-center justify-center gap-3"
@@ -62,7 +62,7 @@ const BringItHome = () => {
           </button>
         </div>
 
-        <div className="text-center">
+        <div className="text-center mb-16">
           <p className="text-base text-neutral-600 italic">
             "The future needs solutions that work <em>and</em> inspire."
           </p>

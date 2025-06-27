@@ -48,15 +48,15 @@ const CustomGPTs = () => {
 
   return (
     <section className="py-16 bg-white px-4">
-      <div className="max-w-lg mx-auto">
+      <div className="max-w-sm mx-auto">
         <div className="text-center mb-12">
-          <div className="inline-block border-2 border-accent-600 rounded-xl p-4 mb-8">
+          <div className="inline-block border-2 border-accent-600 rounded-2xl p-6 mb-8">
             <img 
               src="/lovable-uploads/b3d627f5-06f2-4d97-bf68-8e1eb3889a3d.png" 
               alt="AltPath.ai Logo" 
-              className="h-12 w-12"
+              className="h-16 w-16"
             />
-            <div className="text-accent-600 font-medium mt-2 text-xs">AltPathAI</div>
+            <div className="text-accent-600 font-medium mt-3 text-sm">AltPathAI</div>
           </div>
           <h2 className="text-4xl md:text-5xl font-serif text-neutral-800 mb-6 leading-tight">
             Custom GPTs for Your AltPath
@@ -65,12 +65,12 @@ const CustomGPTs = () => {
             Adaptive AI assistants trained on Elegant Pragmatism principles to guide your unique journey.
           </p>
           
-          <div className="bg-amber-100 text-amber-800 px-6 py-4 rounded-xl text-base font-medium mb-8">
+          <div className="bg-amber-100 text-amber-800 px-6 py-4 rounded-xl text-base font-medium mb-12">
             Custom GPTs launching late 2025 — stay tuned!
           </div>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-6 mb-16">
           {gptFeatures.map((feature, index) => (
             <div
               key={index}
