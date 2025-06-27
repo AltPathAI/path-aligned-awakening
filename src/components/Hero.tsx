@@ -58,43 +58,55 @@ const Hero = () => {
       </div>
 
       <div className="max-w-lg mx-auto text-center relative z-10">
-        {/* Logo */}
+        {/* Logo with border like in screenshot */}
         <div className="mb-8 animate-fade-in">
-          <img 
-            src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
-            alt="AltPath.ai Logo" 
-            className="mx-auto h-24 w-24 hover:scale-105 transition-transform duration-300"
-          />
+          <div className="inline-block border-2 border-accent-600 rounded-xl p-4 mb-6">
+            <img 
+              src="/lovable-uploads/2b1e6ab1-382d-4686-ba1e-6a11b71e7f34.png" 
+              alt="AltPath.ai Logo" 
+              className="h-16 w-16"
+            />
+            <div className="text-accent-600 font-medium mt-2 text-sm">AltPathAI</div>
+          </div>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-serif font-normal text-neutral-800 mb-6 tracking-tight leading-tight animate-fade-in">
+        <h1 className="text-4xl md:text-5xl font-serif font-normal text-neutral-800 mb-6 tracking-tight leading-tight animate-fade-in">
           <span className="block mb-2">Solve problems first.</span>
           <span className="block"><em className="text-accent-600 font-normal">Beautify answers second.</em></span>
         </h1>
         
-        <p className="text-base md:text-lg text-neutral-600 mb-12 font-light leading-relaxed animate-fade-in px-2" style={{ animationDelay: '0.3s' }}>
+        <p className="text-lg text-neutral-600 mb-12 font-light leading-relaxed animate-fade-in px-2" style={{ animationDelay: '0.3s' }}>
           <span className="block mb-2">Pragmatism delivers working solutions;</span>
           <span className="block">Aesthetics refines them into personal joy.</span>
         </p>
 
-        {/* Action Buttons */}
-        <div className="flex flex-col gap-3 justify-center items-center mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <Button
+        {/* Action Buttons - styled to match screenshot */}
+        <div className="flex flex-col gap-4 justify-center items-center mb-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <button
             onClick={handleYouTubeClick}
-            size="lg"
-            className="bg-accent-600 hover:bg-accent-700 text-white px-6 py-3 text-base font-medium rounded-lg transition-all hover:shadow-lg hover:scale-105 group w-full max-w-xs"
+            className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 text-lg font-medium rounded-xl transition-all hover:shadow-lg hover:scale-105 group w-full max-w-sm flex items-center justify-center gap-3"
           >
-            <Youtube className="w-4 h-4 mr-2" />
+            <Youtube className="w-5 h-5" />
             Subscribe on YouTube
-          </Button>
-          <Button
+          </button>
+          <button
             onClick={() => window.open('https://calendly.com/altpathai', '_blank')}
-            size="lg"
-            className="bg-accent-600 hover:bg-accent-700 text-white px-6 py-3 text-base font-medium rounded-lg transition-all hover:shadow-lg hover:scale-105 group w-full max-w-xs"
+            className="bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 text-lg font-medium rounded-xl transition-all hover:shadow-lg hover:scale-105 group w-full max-w-sm flex items-center justify-center gap-3"
           >
-            <Calendar className="w-4 h-4 mr-2" />
+            <Calendar className="w-5 h-5" />
             Schedule Meet & Greet →
-          </Button>
+          </button>
+        </div>
+
+        {/* Bottom CTA Button - matching the one at bottom of screen */}
+        <div className="fixed bottom-4 left-4 right-4 z-50">
+          <button
+            onClick={() => window.open('https://calendly.com/altpathai', '_blank')}
+            className="w-full bg-accent-600 hover:bg-accent-700 text-white px-6 py-4 rounded-xl font-medium transition-all hover:shadow-lg flex items-center justify-center gap-2 text-lg"
+          >
+            <Calendar className="w-5 h-5" />
+            Schedule Meet & Greet →
+          </button>
         </div>
 
         <button
